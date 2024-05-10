@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>工具推荐-02 QuickLook：一款免费的轻量级快速预览工具</title>
+      <link href="/2024/05/10/%E5%B7%A5%E5%85%B7_02_QuickLook/"/>
+      <url>/2024/05/10/%E5%B7%A5%E5%85%B7_02_QuickLook/</url>
+      
+        <content type="html"><![CDATA[<p><img src="C:\Users\19275\Downloads\Programs\52YVTCRb.png"></p><span id="more"></span><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>眼馋Mac 系统上空格预览的功能很久了？这不就有了</p><p>QuickLook就是一款让用户在 Windows 系统下单机空格键就能实现文件预览的功能，与 Mac 系统使用体验几乎一致。虽然已经上架微软应用商店，但还是建议从Github上下载。</p><p><img src="C:\Users\19275\Downloads\Programs\jX4O2NE1.png"></p><p>当然了，QuickLook默认没有添加对office文件的支持，不过这难不倒万能的开发者们。</p><p>通过插件支持实现他们吧。</p><p><img src="C:\Users\19275\Downloads\Programs\5cj6sIg5.png"></p><p>目前能够通过添加插件支持的文件格式，除了office文档之外，还有“.epub”、“.shp”、“.otf“、”ttf”、“.3ds”等特殊文件格式。(“”.ipynb”的插件不好用，不推荐)</p><p><img src="C:\Users\19275\Downloads\Programs\gMCyFpNv.png"></p><p>顺便一提，pdf的预览比我双击打开还要好用。绝了，反应也超快的。酷~</p><p><img src="C:\Users\19275\Downloads\Programs\OwNnJOlh.png"></p><p>在预览窗口可以进一步查看文件详细信息，为了显示方便可以直接将窗口置顶显示（无敌的功能！！！），如果还需进一步操作可以用默认格式关联软件打开文件。</p><p>而在预览视频&#x2F;音频文件时，QuickLook类似一个迷你播放器，支持进度条调节，可操作性更高。（懒，不截图了）</p><h1 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h1><p><a href="https://github.com/QL-Win/QuickLook">QuickLook</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>工具推荐-01 Trilium:个人知识库的超高自由度编辑</title>
       <link href="/2024/05/08/%E5%B7%A5%E5%85%B7_01_trilium/"/>
       <url>/2024/05/08/%E5%B7%A5%E5%85%B7_01_trilium/</url>
