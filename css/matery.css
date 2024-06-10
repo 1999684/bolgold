@@ -34,10 +34,13 @@
 }
 
 body {
-    background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0%;
+    background-image: url(https://s2.loli.net/2024/06/10/LXdfmk8YS9NRtcH.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    #linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0%;
     background-attachment: fixed;
     margin: 0;
-    color: #7F95D1;
+    color: #010511;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -229,6 +232,7 @@ mark {
 .card {
     border-radius: 10px;
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
+    opacity: 0.8;
 }
 
 .card .card-image img {
@@ -242,7 +246,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #4cbf30 0%, #1eac67 100%);
 }
 
 .text-color {
@@ -250,7 +254,7 @@ mark {
 }
 
 .white-color {
-    color: #fff;
+    color: #e20d0d;
 }
 
 .progress-bar {
@@ -534,12 +538,11 @@ header .go-back i {
     position: relative;
     display: flex;
     align-items: center;
-    height: 60vh;
     padding: 0;
     border: 0;
     overflow: hidden;
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     transform: translate3d(0px, 0px, 0px);
 }
 
@@ -790,7 +793,7 @@ header .go-back i {
     border: 0;
     border-radius: 10px;
     color: rgba(0, 0, 0, .87);
-    background: #fff 50%;
+    background: #ffffff 50%;
     background-size: cover;
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
 }
@@ -808,13 +811,13 @@ header .go-back i {
 
 .recommend .post-card .post-categories .category {
     padding: 0 8px;
-    color: hsla(0, 0%, 100%, .7) !important;
+    color: hsla(0, 0%, 100%, 0.7) !important;
     font-size: .75rem;
     font-weight: 500;
 }
 
 .recommend .post-card a {
-    color: #fff;
+    color: #ffffff;
 }
 
 .recommend .post-card .post-title {
@@ -829,7 +832,7 @@ header .go-back i {
     height: 65px;
     max-height: 65px;
     font-size: 14px;
-    color: hsla(0, 0%, 100%, .78) !important;
+    color: hsla(0, 63%, 97%, 0.78) !important;
 }
 
 .recommend .post-card .read-more {
@@ -838,7 +841,7 @@ header .go-back i {
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 40px;
-    color: #fff;
+    color: #ffffff;
     border-radius: 30px;
     box-shadow: 0 2px 2px 0 rgba(244, 67, 54, .14), 0 3px 1px -2px rgba(244, 67, 54, .2), 0 1px 5px 0 rgba(244, 67, 54, .12);
 }
@@ -886,19 +889,20 @@ article a:hover {
 }
 
 article .card {
-    border-radius: 8px;
+    border-radius: 50px;
     overflow: hidden;
 }
 
 article .card-image {
-    background-color: #222;
+    background-color: #464646;
     border-radius: 8px;
 }
 
 article .card-image img {
+    width: 200;
     height: 220px;
     border-radius: 0.3rem;
-    opacity: .7;
+    opacity: 1;
 }
 
 article .tag-image img {
@@ -943,7 +947,7 @@ article .article-tags .chip {
     font-weight: 400;
     height: 22px;
     line-height: 22px;
-    color: #fff;
+    color: #ffffff;
     border-radius: 10px;
 }
 
@@ -961,7 +965,7 @@ article .article-tags .chip {
     position: absolute;
     box-sizing: border-box;
     z-index: 200;
-    background-color: #fff;
+    background-color: #ffffff;
     font-weight: 500;
 }
 
@@ -1045,7 +1049,7 @@ article .article-tags .chip {
     font-weight: 400;
     height: 25px;
     line-height: 24px;
-    color: #fff;
+    color: #ffffff;
     border-radius: 15px;
     margin-right: 5px;
     margin-bottom: 2px;
@@ -1060,7 +1064,7 @@ article .article-tags .chip {
     margin-right: 5px;
     margin-bottom: 2px;
     color: #42b983;
-    background: #fff;
+    background: #ffffff;
     border: 1px solid;
     transition: all 0.6s ease-in-out;
 }
@@ -2193,7 +2197,7 @@ body.DarkMode .theme-btn:hover {
     margin-bottom: 20px;
     padding: 1em;
     position: relative;
-    border: 1px solid #eee;
+    border: 1px solid #ffffff;
     border-left-width: 5px;
 }
 .post-container .note summary {
