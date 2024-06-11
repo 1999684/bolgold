@@ -34,7 +34,7 @@
 }
 
 body {
-    background-image: url(https://s2.loli.net/2024/06/10/LXdfmk8YS9NRtcH.jpg);
+    background-image: url(https://github.com/1999684/picx-images-hosting/raw/master/bg1.1hs2ab1e52.webp);
     background-repeat: no-repeat;
     background-size: cover;
     #linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0%;
@@ -94,7 +94,7 @@ p {
 hr {
     margin: 20px 0;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ffffff;
 }
 
 blockquote {
@@ -246,11 +246,11 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #1eac67 100%);
+    background-image: linear-gradient(to right, #97b1d6 0%, #1b4be9 100%);
 }
 
 .text-color {
-    color: #0f9d58 !important;
+    color: #a3857e !important;
 }
 
 .white-color {
@@ -302,6 +302,7 @@ header .brand-logo .logo-img {
 
 header .brand-logo .logo-span {
     font-size: 1.6rem;
+    color: #6fd440;
 }
 
 /*修改顶部 logo 的文字垂直对齐为 top，避免默认 middle 看起来偏下*/
@@ -585,10 +586,11 @@ header .go-back i {
 }
 
 .bg-cover .description {
-    font-weight: 300;
+    font-weight: 600;
     font-size: 1.25rem;
+    font-family: STKaiti;
     line-height: 1.4em;
-    color: #eee;
+    color: #2c0505;
 }
 
 .bg-cover .post-title {
@@ -832,7 +834,7 @@ header .go-back i {
     height: 65px;
     max-height: 65px;
     font-size: 14px;
-    color: hsla(0, 63%, 97%, 0.78) !important;
+    color: hsla(0, 90%, 8%, 0.78) !important;
 }
 
 .recommend .post-card .read-more {
@@ -1302,7 +1304,7 @@ thead {
 }
 
 .chip-container .chip-active {
-    color: #FFF !important;
+    color: #ffffff !important;
     background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%) !important;
     box-shadow: 2px 5px 10px #aaa !important;
 }
@@ -1727,7 +1729,7 @@ thead {
 .my-projects .info .info-desc {
     margin: 0 0 10px;
     font-size: 0.9rem;
-    color: #999;
+    color: #e9c5c5;
 }
 
 .my-skills .skillbar {
@@ -1895,8 +1897,8 @@ p.search-result-summary{
     margin: 0 2px;
     padding: 1px 5px 1px 4px;
     border-radius: 2px;
-    background-color: #f2f2f2;
-    color: #e96900;
+    background-color: #ffffff;
+    color: #975e30;
     font-style: normal;
     white-space: pre-wrap;
 }
