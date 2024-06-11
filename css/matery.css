@@ -2304,3 +2304,16 @@ body.DarkMode .theme-btn:hover {
 
 /* 滚动条 */
 
+::-webkit-scrollbar-thumb {
+    background-color: #0099ff;
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    border-radius: 3em;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(243, 218, 232);
+    border-radius: 3em;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 15px;
+}
