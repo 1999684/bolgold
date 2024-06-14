@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="aboutme, ZTGD.slowly">
+    <meta name="keywords" content="ZTGD.slowly">
     <meta name="description" content="I know what I want to do, and it makes sense to get going.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>aboutme | ZTGD.slowly</title>
+    <title>ZTGD.slowly</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -352,7 +352,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">aboutme</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -388,28 +388,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-06-10
+                    2024-06-15
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-06-10
+                    2024-06-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    746
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -429,7 +429,257 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的简历</title>
+    <!--link rel="stylesheet" href="../_data/aboutme.css"-->
+    <style>
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 0;  
+            padding: 20px;  
+        }  
+        h1 {  
+            text-align: center;  
+            color: #333;  
+        }  
+        section {  
+            margin-bottom: 20px;  
+        }  
+        section h2 {  
+            color: #021e53;  
+            font-size:35px; /*设置字体大小*/
+		    font-weight:600; /*设置字体粗细*/
+            font-family:"华文新魏";
+		    text-shadow:1px 0px #009916, 1px 2px #006615, 3px 1px #009916,
+		            2px 3px #006615, 4px 2px #009916, 4px 4px #006615,
+		            5px 3px #009916
+        }
+        p, ul {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .waterfall-container {
+            text-align: center;
+        }
+        .waterfall {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .card1-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card1 {
+            display: flex;
+            flex-direction: column;
+            width: 310px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: box-shadow 0.3s ease;
+            text-align: left;
+            border-radius: 15%;
+        }
+        .card1 .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .card1:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 320px;
+        }
+        .card1 .description {
+            font-size: 14px;
+            color: #381717;
+        }
+        .button {  
+            /* 这里可以添加按钮的样式 */  
+            margin-bottom: 10px; /* 添加垂直间距 */  
+            margin-left: 2px;
+            margin-right: 2px;
+            width: 200px;
+            background-color:transparent;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+            color: #000000;
+            font-family: "楷体";
+            font-size: 20px;
+            font-weight: 100;
+            padding: 14px;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+        } 
+        .button:hover {
+            background: #eeeef1;
+            width: 205px;
+            opacity: 0.5;
+            color: #020218;
+            -webkit-border-radius: 14px;
+            -moz-border-radius: 14px;
+            border-radius: 14px;
+            text-decoration: none;
+        }
+
+        .popup {  
+            position: fixed;  
+            top: 50%;  
+            left: 50%;  
+            transform: translate(-50%, -50%);  
+            width: 800px; /* 根据需要调整 */  
+            max-width: 90%; /* 防止弹窗过大 */  
+            padding: 20px;  
+            background-color: #fff;  
+            border: 1px solid #ccc;  
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  
+            z-index: 1000; /* 确保弹窗在顶层 */  
+            display: none; /* 默认隐藏弹窗 */  
+            padding-right: 40px;
+        }
+        .popup .title {  
+            font-size: 35px;  
+            font-family: "楷体";
+            font-weight: bold;  
+            margin-bottom: 10px;  
+        }
+        .popup .close-button {  
+            position: absolute; /* 绝对定位按钮 */  
+            top: 10px; /* 距离弹窗顶部距离 */  
+            right: 10px; /* 距离弹窗右侧距离 */  
+            /* 其他按钮样式 */  
+            cursor: pointer;  
+            border: none;  
+            background-color: #ccc;  
+            padding: 5px 10px;  
+        }
+        .popup .description {  
+            font-size: 25px;  
+            color: #061255;  
+        }
+        .overlay {  
+            position: fixed;  
+            top: 0;  
+            left: 0;  
+            width: 100%;  
+            height: 100%;  
+            background-color: rgba(0, 0, 0, 0.5);  
+            z-index: 999; /* 确保在弹窗之下 */
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 40px;">个人信息</h1>
+    <section>
+        <h2>Information Loading</h2>
+        <p>Boy boy = new Boy();</p>
+        <p>boy.name = "袁加铖";</p>
+        <p>boy.bithYear = "2003";</p>
+        <p>boy.setEmail(1927552117@qq.com);</p>
+        <!--p><strong>出生年份:</strong> 2003</p>
+        <p><strong>电子邮件:</strong> 1927552117@qq.com</p-->
+    </section>
+    <section>
+        <h2>工作经历</h2>
+        <div class="card1-container">
+            <div class="card1" onclick="showPopup(this)">
+                <div class="title">暂无</div>  
+                <div class="description">
+                    <p>先空着</p>
+                    <p><em>XXXX年-至今</em></p>  
+                    <ul>  
+                        <li>先空着</li>   
+                    </ul>  
+                </div>
+            </div> 
+            <div class="card1" onclick="showPopup(this)">
+                <div class="title">暂无</div>  
+                <div class="description">
+                    <p>先空着</p>
+                    <p><em>XXXX年-至今</em></p>  
+                    <ul>  
+                        <li>先空着</li>   
+                    </ul>  
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section>  
+        <h2>掌握的技能</h2>  
+        <center>
+            <div class="waterfall-container">  
+                <div class="waterfall">  
+                    <button class="button" >熟练掌握Java、Python等编程语言</button>  
+                    <button class="button" >熟悉HTML、CSS、JavaScript等前端技术</button>  
+                    <button class="button" >熟练使用Spring Boot、MySQL等后端技术</button>  
+                    <button class="button" >熟练使用Spring Boot、MySQL等后端技术</button> 
+                    <!-- 更多的按钮... -->  
+                </div>  
+            </div>  
+        </center>
+    </section>
+
+    <div class="popup" id="cardPopup">   
+        <div class="title" id="popupTitle"></div>  
+        <div class="description" id="popupDescription"></div>  
+    </div>
+    <div class="overlay" onclick="hidePopup()"></div>
+</body>
+<script>
+    window.onload = function() {  
+    // 获取所有卡片  
+    var cards = document.querySelectorAll('.card1');  
+    // 预设的颜色数组  
+    var colors = ['rgb(75, 139, 236, 0.5)', 'rgb(21, 250, 21, 0.5)', 'rgb(236, 155, 48, 0.5)', 'rgb(253, 9, 9, 0.5)'];  
+    // 遍历每个卡片  
+    cards.forEach(function(card1, index) {  
+        // 随机选择一个颜色  
+        var randomColor = colors[Math.floor(Math.random() * colors.length)];  
+        // 设置卡片的背景色  
+        card1.style.backgroundColor = randomColor;  
+    });  
+    };
+
+    function showPopup(card) {  
+        const popup = document.getElementById('cardPopup');  
+        const overlay = document.querySelector('.overlay');  
+        const title = card.querySelector('.title').textContent;  
+        const description = card.querySelector('.description').innerHTML;  
+      
+        popup.querySelector('#popupTitle').textContent = title;  
+        popup.querySelector('#popupDescription').innerHTML = description;  
+      
+        popup.style.display = 'block';  
+        overlay.style.display = 'block';  
+        popup.addEventListener('click', function(event) {  
+            // 检查点击的目标元素是否有 .no-close 类  
+            // 如果有，则不关闭弹窗  
+            if (event.target.classList.contains('no-close')) {  
+                return;  
+            }  
+            // 否则，隐藏弹窗  
+            hidePopup();  
+        });
+    }// 显示弹窗的函数
+    function hidePopup() {  
+        const popup = document.getElementById('cardPopup');  
+        const overlay = document.querySelector('.overlay');  
+        popup.style.display = 'none';  
+        overlay.style.display = 'none';  
+      }// 隐藏弹窗的函数
+</script>
+</html>
                 
             </div>
             <hr/>
@@ -545,9 +795,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="aboutme">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">aboutme</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -558,7 +808,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-15
                             </span>
                         <span class="publish-author">
                             
@@ -583,9 +833,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="aboutme">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">aboutme</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -596,7 +846,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-15
                             </span>
                         <span class="publish-author">
                             
