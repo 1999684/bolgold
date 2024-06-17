@@ -153,6 +153,15 @@
         </a>
       </li>
       
+      <li>
+        <a href="/think">
+          
+          <i class="fas fa-file-text" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>瞎写</span>
+        </a>
+      </li>
+      
     </ul>
     
   </li>
@@ -294,6 +303,16 @@
                   </a>
                 </li>
               
+                <li>
+
+                  <a href="/think " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-file-text" style="position: absolute;left:50px" ></i>
+			      
+		          <span>瞎写</span>
+                  </a>
+                </li>
+              
             </ul>
           
         </li>
@@ -348,29 +367,29 @@
     .about-cover {
         height: 75vh;
     }
-    .sidebar {  
-    width: 200px;  
-    height: 100%+10px;  
-    position: fixed;  
-    left: 0;  
-    top: 0;  
-    background-color: #f3f3f3;  
-    overflow-y: auto;  
+    .sidebar {
+    width: 200px;
+    height: 100%+10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #f3f3f3;
+    overflow-y: auto;
   }
   .button1 {
     width: 100%;
     height: 400px;
     font-size: 30px;
   }
-  .main-content {  
-    margin-left: 210px; /* 与侧边栏同宽 */
+  .main-content {
+    margin-left: 10%; /* 与侧边栏同宽 */
     margin-right: 10px;
     background-color: #f3f3f3;
     justify-content: center;
-    height: 400px;  
+    height: 400px;
     width: 100%-220px;
   }  
-  .image-carousel {  
+  .image-carousel {
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
@@ -383,12 +402,12 @@
     position: relative;
   }
   .card1::before { /* 使用伪元素来设置背景透明度 */  
-    content: "";  
-    position: absolute;  
-    top: 0;  
-    left: 0;  
-    right: 0;  
-    bottom: 0;  
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.5); /* 使用RGBA设置半透明的背景色 */ 
     z-index: -1; /* 确保伪元素在子元素后面 */  
   }
@@ -473,9 +492,9 @@
                     </div>
                     <div class="card1" style="height: 95%;">
                         <div class="card1-content">
-                            <!--div class="sidebar">  
-                                <button class="button1" onclick="Book()">书单</button>  
-                                <button class="button1" onclick="Anime()">视频</button>  
+                            <!--div class="sidebar">
+                                <button class="button1" onclick="Book()">书单</button>
+                                <button class="button1" onclick="Anime()">视频</button>
                             </div--> 
                             <div class="main-content">
                                 <br>
@@ -514,61 +533,61 @@
               '<img src="https://github.com/1999684/picx-images-hosting/raw/master/book/book4.3d4nc2k8pe.webp">',
               '<img src="https://github.com/1999684/picx-images-hosting/raw/master/book/book4.3d4nc2k8pe.webp">']
         };
-        document.addEventListener('DOMContentLoaded', function() {    
-          var show1 = document.getElementById('show1');  
-          var show2 = document.getElementById('show2');  
-          setImages(show1, 'content1');  
+        document.addEventListener('DOMContentLoaded', function() {  
+          var show1 = document.getElementById('show1');
+          var show2 = document.getElementById('show2');
+          setImages(show1, 'content1');
           setImages(show2, 'content2'); 
-          startImageCarousel(show1, 'content1');  
+          startImageCarousel(show1, 'content1');
           startImageCarousel(show2, 'content2');
-          function setImages(element, contentKey) {  
-              var images = contents[contentKey];  
+          function setImages(element, contentKey) {
+              var images = contents[contentKey];
               element.innerHTML = '';
-              images.forEach(function(imageHtml) {  
+              images.forEach(function(imageHtml) {
                   var img = document.createElement('img');
                   img.src = extractSrcFromImageHtml(imageHtml);
                   img.style.height = '255px';
                   img.style.width = 'auto';
                   img.style.marginLeft = '5px';
-                  img.addEventListener('mouseover', function() {  
+                  img.addEventListener('mouseover', function() {
                       this.style.height = '260px';
-                  });  
-                  img.addEventListener('mouseout', function() {  
+                  });
+                  img.addEventListener('mouseout', function() {
                       this.style.height = '255px';
-                  });  
-                  element.appendChild(img);  
-              });  
+                  });
+                  element.appendChild(img);
+              });
           }
-          function extractSrcFromImageHtml(html) {  
-              var match = html.match(/src="([^"]+)"/);  
-              return match ? match[1] : '';  
+          function extractSrcFromImageHtml(html) {
+              var match = html.match(/src="([^"]+)"/);
+              return match ? match[1] : '';
           }
           function startImageCarousel(element, contentKey, intervalTime = 2000) {//替换时间
-            var currentIndex = 0;  
+            var currentIndex = 0;
             console.log('1');
-            var images = contents[contentKey];  
-            if (!images || images.length === 0) {  
+            var images = contents[contentKey];
+            if (!images || images.length === 0) {
               // 处理 images 不存在或为空的情况  
-              console.error('No images found for contentKey:', contentKey);  
-              return;  
+              console.error('No images found for contentKey:', contentKey);
+              return;
             }
-            function updateImage() {  
-              var imgElements = element.getElementsByTagName('img');  
-              if (imgElements.length > 0) {  
+            function updateImage() {
+              var imgElements = element.getElementsByTagName('img');
+              if (imgElements.length > 0) {
                   // 移除当前图片元素  
-                  element.removeChild(imgElements[0]);  
+                  element.removeChild(imgElements[0]);
               } 
               currentIndex = (currentIndex + 1) % images.length; // 自增 currentIndex 并处理溢出  
-              var imgHtml = images[currentIndex];    
-              var img = document.createElement('img');    
-              img.src = extractSrcFromImageHtml(imgHtml);    
-              img.style.height = '255px';    
-              img.style.width = 'auto';    
-              img.style.marginLeft = '5px';    
-              element.appendChild(img);  
+              var imgHtml = images[currentIndex];  
+              var img = document.createElement('img');  
+              img.src = extractSrcFromImageHtml(imgHtml);  
+              img.style.height = '255px';  
+              img.style.width = 'auto';  
+              img.style.marginLeft = '5px';  
+              element.appendChild(img);
             }  
-            updateImage();  
-            setInterval(updateImage, intervalTime);  
+            updateImage();
+            setInterval(updateImage, intervalTime);
           }  
         });
       </script> 
