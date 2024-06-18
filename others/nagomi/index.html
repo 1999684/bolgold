@@ -370,7 +370,10 @@
     .image-gallery {  
         display: flex;  
         flex-wrap: wrap;  
-        justify-content: space-around;  
+        align-content: center;
+        justify-content: center;
+        margin-left: 6%;
+        margin-right: 6%;
     }  
     .image-card {  
         width: 150px;
@@ -486,8 +489,8 @@
 
     </div>
 </div>
-<main class="content">
-    <div id="video" class="container about-container">
+<main class="content" style="display: flex; align-content: center; justify-content: center; flex-direction: column;">
+    <div id="nagomi" class="container about-container">
         <div class="card">
             <div class="card-content">
                 <div class="card-content article-card-content">
@@ -503,9 +506,9 @@
             <img class="modal-img" src="" alt="Image Preview">  
         </div>  
     </div>
-    <div class="image-gallery" style="margin-left: 50px;margin-right: 50px;">  
+    <div class="image-gallery">  
     </div>  
-    <div class="pagination" style="margin-left: 50px;margin-right: 50px;">  
+    <div class="pagination">  
     </div>  
     <script>  
         const images = [  
