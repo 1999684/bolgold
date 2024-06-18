@@ -180,11 +180,43 @@
   <li class="hide-on-med-and-down nav-item">
     
     <a href="/list" class="waves-effect waves-light">
+
       
-      <i class="fa fa-play-circle" style="zoom: 0.6;"></i>
+      <i class="fa fa-list" style="zoom: 0.6;"></i>
       
       <span>列表</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/list/novel">
+          
+          <i class="fa fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>小说</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/list/video">
+          
+          <i class="fa fa-video-camera" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>视频</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/list/game">
+          
+          <i class="fa fa-gamepad" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>游戏</span>
+        </a>
+      </li>
+      
+    </ul>
     
   </li>
   
@@ -330,12 +362,46 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/list" class="waves-effect waves-light">
+		<a href="javascript:;">
 			
-			    <i class="fa-fw fa fa-play-circle"></i>
+				<i class="fa-fw fa fa-list"></i>
 			
 			列表
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/list/novel " style="margin-left:75px">
+				  
+				   <i class="fa fa fa-book" style="position: absolute;left:50px" ></i>
+			      
+		          <span>小说</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/list/video " style="margin-left:75px">
+				  
+				   <i class="fa fa fa-video-camera" style="position: absolute;left:50px" ></i>
+			      
+		          <span>视频</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/list/game " style="margin-left:75px">
+				  
+				   <i class="fa fa fa-gamepad" style="position: absolute;left:50px" ></i>
+			      
+		          <span>游戏</span>
+                  </a>
+                </li>
+              
+            </ul>
           
         </li>
         
@@ -475,7 +541,7 @@
 
     <script>
         // 每天切换 banner 图.  Switch banner image every day.
-        $('.bg-cover').css('background-image', 'url(/medias/banner/18.png)');
+        $('.bg-cover').css('background-image', 'url(/medias/banner/19.png)');
     </script>
     
 
@@ -495,11 +561,12 @@
                             <!--div class="sidebar">
                                 <button class="button1" onclick="Book()">书单</button>
                                 <button class="button1" onclick="Anime()">视频</button>
+                                <button class="button1" onclick="Game()">游戏</button>
                             </div--> 
                             <div class="main-content">
                                 <br>
                                 <a href="../list/novel"><p class="p1">看点啥吧</p></a>
-                                <p class="p2">有点时间看看书也不错（此处每次刷四本封面，推荐点小说）</p>
+                                <p class="p2">有点时间看看书也不错</p>
                                 <div id="show1" class="image-carousel">
                                 </div>
                             </div>
@@ -510,6 +577,13 @@
                                 <div id="show2" class="image-carousel">
                                 </div>
                             </div>
+                            <div class="main-content">
+                              <br>
+                              <a href="../list/game"><p class="p1">游戏</p></a>
+                              <p class="p2">记下我的喜欢</p>
+                              <div id="show3" class="image-carousel">
+                              </div>
+                          </div>
                         </div>
                     </div>
                     <div id="articleContent" data-aos="fade-up">
@@ -531,15 +605,23 @@
               '<img src="https://1999684.github.io/picx-images-hosting/anime/p2908139961.jpg">',
               '<img src="https://1999684.github.io/picx-images-hosting/anime/p2908559039.jpg">',
               '<img src="https://1999684.github.io/picx-images-hosting/TVShow/p2908285265.jpg">',
+              '<img src="https://1999684.github.io/picx-images-hosting/TVShow/p2904182545.jpg">'],
+          'content3': [
+              '<img src="https://media.clidpic.top/wordpress/wp-content/uploads/2018/03/572954_front.jpg">',
+              '<img src="https://1999684.github.io/picx-images-hosting/anime/p2908559039.jpg">',
+              '<img src="https://1999684.github.io/picx-images-hosting/TVShow/p2908285265.jpg">',
               '<img src="https://1999684.github.io/picx-images-hosting/TVShow/p2904182545.jpg">']
         };
         document.addEventListener('DOMContentLoaded', function() {  
           var show1 = document.getElementById('show1');
           var show2 = document.getElementById('show2');
+          var show3 = document.getElementById('show3');
           setImages(show1, 'content1');
           setImages(show2, 'content2'); 
+          setImages(show3, 'content3');
           startImageCarousel(show1, 'content1');
           startImageCarousel(show2, 'content2');
+          startImageCarousel(show3, 'content3');
           function setImages(element, contentKey) {
               var images = contents[contentKey];
               element.innerHTML = '';

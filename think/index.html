@@ -180,11 +180,43 @@
   <li class="hide-on-med-and-down nav-item">
     
     <a href="/list" class="waves-effect waves-light">
+
       
-      <i class="fa fa-play-circle" style="zoom: 0.6;"></i>
+      <i class="fa fa-list" style="zoom: 0.6;"></i>
       
       <span>列表</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/list/novel">
+          
+          <i class="fa fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>小说</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/list/video">
+          
+          <i class="fa fa-video-camera" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>视频</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/list/game">
+          
+          <i class="fa fa-gamepad" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>游戏</span>
+        </a>
+      </li>
+      
+    </ul>
     
   </li>
   
@@ -330,12 +362,46 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/list" class="waves-effect waves-light">
+		<a href="javascript:;">
 			
-			    <i class="fa-fw fa fa-play-circle"></i>
+				<i class="fa-fw fa fa-list"></i>
 			
 			列表
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/list/novel " style="margin-left:75px">
+				  
+				   <i class="fa fa fa-book" style="position: absolute;left:50px" ></i>
+			      
+		          <span>小说</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/list/video " style="margin-left:75px">
+				  
+				   <i class="fa fa fa-video-camera" style="position: absolute;left:50px" ></i>
+			      
+		          <span>视频</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/list/game " style="margin-left:75px">
+				  
+				   <i class="fa fa fa-gamepad" style="position: absolute;left:50px" ></i>
+			      
+		          <span>游戏</span>
+                  </a>
+                </li>
+              
+            </ul>
           
         </li>
         
@@ -414,7 +480,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-06-18
+                    2024-06-19
                 </div>
                 
 
@@ -588,20 +654,6 @@
     <div class="card1-container">
         <!--添加卡片-->
         <div class="card1" onclick="showPopup(this)"> 
-            <div class="title">开设啦</div>  
-            <div class="description">  
-                <div class="p-container">  
-                    <p class="left-p">06.17</p>  
-                </div>
-                <p class="show">瞎写笔记部分完成咯</p>
-            </div>
-            <ul class="hidden-list" style="display: none;">
-                <hr>
-                <p>测试隐藏内容</p>
-                <li class="showlist"></li>
-            </ul> 
-        </div> 
-        <div class="card1" onclick="showPopup(this)"> 
             <div class="title">注册域名咯</div>  
             <div class="description">  
                 <div class="p-container">  
@@ -613,6 +665,20 @@
                 <hr>
                 <p>个人网站部署在github上的，但是为了看上去更加个人一些，搞了这个域名，想想自己也是搞了一个个人网站，还挺激动的</p>
                 <li class="showlist">阿拉拉  blog.ztgdblog.icu</li>
+            </ul> 
+        </div> 
+        <div class="card1" onclick="showPopup(this)"> 
+            <div class="title">开设啦</div>  
+            <div class="description">  
+                <div class="p-container">  
+                    <p class="left-p">06.17</p>  
+                </div>
+                <p class="show">瞎写笔记部分完成咯</p>
+            </div>
+            <ul class="hidden-list" style="display: none;">
+                <hr>
+                <p>测试隐藏内容</p>
+                <li class="showlist"></li>
             </ul> 
         </div> 
     </div>
@@ -666,6 +732,7 @@
     </script>
 </body>
 </html>
+
 
                 
             </div>
