@@ -4,10 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="工具推荐-02 QuickLook：一款免费的轻量级快速预览工具, ZTGD.slowly">
-    <meta name="description" content="
-简介眼馋Mac 系统上空格预览的功能很久了？这不就有了
-QuickLook就是一款让用户在 Windows 系统下单机空格键就能实现文件预览的功能，与 Mac 系统使用体验几乎一致。虽然已经上架微软应用商店，但还是建议从Github上下载">
+    <meta name="keywords" content="分类: 前端, ZTGD.slowly">
+    <meta name="description" content="I know what I want to do, and it makes sense to get going.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +17,7 @@ QuickLook就是一款让用户在 Windows 系统下单机空格键就能实现�
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>工具推荐-02 QuickLook：一款免费的轻量级快速预览工具 | ZTGD.slowly</title>
+    <title>分类: 前端 | ZTGD.slowly</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -477,484 +475,372 @@ QuickLook就是一款让用户在 Windows 系统下单机空格键就能实现�
 
 </header>
 
-    
+    <style type="text/css">
+    /* don't remove. */
+    .about-cover {
+        height: 75vh;
+    }
+</style>
 
+<div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                WEL ZTGD
+                
+            </div>
 
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s2.loli.net/2024/06/10/ownpOrc81LDhNf3.png')">
-    <div class="container" style="right: 0px;left: 0px;">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">工具推荐-02 QuickLook：一款免费的轻量级快速预览工具</h1>
-                </div>
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="/libs/typed/typed.js"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: [ 
+                            
+                                "浮世三千，吾爱有三。日，月与卿。日为朝，月为暮， 卿为朝朝暮暮。",
+                            
+                                "谎言是真相的暂时性朋友，而真相是谎言的最终审判者",
+                            
+                        ],
+                        startDelay: 300,
+                        typeSpeed: 130,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: false
+                    });
+                </script>
+                
             </div>
         </div>
     </div>
 </div>
 
 
-
-
-<main class="post-container content">
-
+    <script>
+        // 每天切换 banner 图.  Switch banner image every day.
+        $('.bg-cover').css('background-image', 'url(/medias/banner/20.png)');
+    </script>
     
-    <div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
-<div id="artDetail">
+
+    </div>
+</div>
+
+<main class="content">
+
+    <style>
+    /* 文章分类书本样式 */
+    .chip-container .tag-chips {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .chip-container .tag-chips a {
+        margin: 0 7px 10px;
+    }
+
+    .chip-container .chip {
+        max-width: calc(100% / 4);
+        min-width: 10em;
+        height: 200px;
+        position: relative;
+        transition: .5s linear;
+        padding: 19px 0;
+        line-height: 20px;
+        z-index: 990;
+        border-radius: 5px 15px 15px 5px;
+        transform-origin: left center 0;
+    }
+
+    .chip-container .notebook-cover::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: calc(100% + 2px);
+        top: -1px;
+        z-index: 100;
+        border-radius: 2px;
+        right: 25px;
+        transition: 2s ease;
+        background: linear-gradient(to right, #1e606e 0, #2e95aa 12%, #1e606e 25%, #2e95aa 37%, #1e606e 50%, #2e95aa 62%, #1e606e 75%, #2e95aa 87%, #1e606e 100%);
+    }
+
+    .chip .notebook-skin {
+        height: 50px;
+        width: 100%;
+        background: #e8e8e0;
+        margin-top: 42px;
+        padding: 10px 32px 64px 10px;
+        font-size: 19px;
+        position: relative;
+        z-index: 10;
+        color: #222;
+        text-align: left;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    }
+
+    .chip .notebook-skin:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 15px;
+        left: 0;
+        bottom: 0;
+        background: #cddc39;
+    }
+
+    .notebook-cover {
+        background: #cc4b48;
+        height: 200px;
+        width: 140px;
+        position: absolute;
+        border-radius: 5px 15px 15px 5px;
+        z-index: 10;
+        transition: .5s linear;
+        transform-style: preserve-3d;
+        transform-origin: left center 0;
+    }
+
+    .moleskine-wrapper {
+        max-width: calc(100% / 4);
+        min-width: 10em;
+    }
+
+    .moleskine-notebook:hover .notebook-cover {
+        transform: rotateY(-50deg);
+        z-index: 99;
+        box-shadow: 20px 10px 50px rgba(0, 0, 0, .2);
+    }
+
+    .moleskine-notebook {
+        height: 200px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        transition: .5s linear;
+        border-radius: 5px 15px 15px 5px;
+        transform-origin: left center 0;
+    }
+
+    .moleskine-notebook:hover {
+        transform: rotateZ(-10deg);
+    }
+
+    .notebook-page.dotted {
+        background: linear-gradient(to bottom, #fbfae8 9px, #e4e4e4 1px);
+        background-size: 100% 10px;
+    }
+
+    .chip-container .chip:hover {
+        filter: invert(.1);
+    }
+
+    .notebook-page {
+        height: 100%;
+        width: 140px;
+        position: absolute;
+        top: 10px;
+        background-color: #fbfae8;
+        z-index: 0;
+        border-radius: 5px 16px 16px 5px;
+        overflow: hidden;
+    }
+</style>
+
+
+
+<div id="category-cloud" class="container chip-container">
     <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
-                <div class="col s7">
-                    
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E5%B7%A5%E5%85%B7/">
-                                <span class="chip bg-color">工具</span>
-                            </a>
-                        
-                    </div>
-                    
-                </div>
-                <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
-                                工具
-                            </a>
-                        
-                    </div>
-                    
-                </div>
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-bookmark"></i>&nbsp;&nbsp;文章分类
             </div>
-
-            <div class="post-info">
+            <div class="tag-chips">
                 
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-05-10
-                </div>
                 
-
                 
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-06-20
-                </div>
-                
-
-                
-                <div class="info-break-policy">
-                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    308
-                </div>
-                
-
-                
-                <div class="info-break-policy">
-                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
-                </div>
-                
-
-                
-                    <div id="busuanzi_container_page_pv" class="info-break-policy">
-                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                        <span id="busuanzi_value_page_pv"></span>
+                <a href="/categories/hexo/" title="hexo: 1">
+                    <div class="moleskine-wrapper">
+                        <div class="moleskine-notebook">
+                            <div class="chip notebook-cover center-align waves-effect waves-light
+                               chip-default "
+                                style="background-color: #F9EBEA;">
+                                <div
+                                    class="notebook-skin
+                                       chip-default ">
+                                    hexo
+                                </div>
+                            </div>
+                            <div class="notebook-page dotted"></div>
+                        </div>
                     </div>
-				
+                    
+                </a>
+                
+                
+                <a href="/categories/Docker/" title="Docker: 1">
+                    <div class="moleskine-wrapper">
+                        <div class="moleskine-notebook">
+                            <div class="chip notebook-cover center-align waves-effect waves-light
+                               chip-default "
+                                style="background-color: #F5EEF8;">
+                                <div
+                                    class="notebook-skin
+                                       chip-default ">
+                                    Docker
+                                </div>
+                            </div>
+                            <div class="notebook-page dotted"></div>
+                        </div>
+                    </div>
+                    
+                </a>
+                
+                
+                <a href="/categories/Markdown/" title="Markdown: 2">
+                    <div class="moleskine-wrapper">
+                        <div class="moleskine-notebook">
+                            <div class="chip notebook-cover center-align waves-effect waves-light
+                               chip-default "
+                                style="background-color: #D5F5E3;">
+                                <div
+                                    class="notebook-skin
+                                       chip-default ">
+                                    Markdown
+                                </div>
+                            </div>
+                            <div class="notebook-page dotted"></div>
+                        </div>
+                    </div>
+                    
+                </a>
+                
+                
+                <a href="/categories/%E5%B7%A5%E5%85%B7/" title="工具: 3">
+                    <div class="moleskine-wrapper">
+                        <div class="moleskine-notebook">
+                            <div class="chip notebook-cover center-align waves-effect waves-light
+                               chip-default "
+                                style="background-color: #E8F8F5;">
+                                <div
+                                    class="notebook-skin
+                                       chip-default ">
+                                    工具
+                                </div>
+                            </div>
+                            <div class="notebook-page dotted"></div>
+                        </div>
+                    </div>
+                    
+                </a>
+                
+                
+                <a href="/categories/%E5%89%8D%E7%AB%AF/" title="前端: 1">
+                    <div class="moleskine-wrapper">
+                        <div class="moleskine-notebook">
+                            <div class="chip notebook-cover center-align waves-effect waves-light
+                               chip-active "
+                                style="background-color: #FEF9E7;">
+                                <div
+                                    class="notebook-skin
+                                       chip-active ">
+                                    前端
+                                </div>
+                            </div>
+                            <div class="notebook-page dotted"></div>
+                        </div>
+                    </div>
+                    
+                </a>
+                
+                
+                <a href="/categories/%E8%B5%84%E6%BA%90%E6%95%B4%E7%90%86%E6%96%B9%E6%B3%95/" title="资源整理方法: 1">
+                    <div class="moleskine-wrapper">
+                        <div class="moleskine-notebook">
+                            <div class="chip notebook-cover center-align waves-effect waves-light
+                               chip-default "
+                                style="background-color: #F8F9F9;">
+                                <div
+                                    class="notebook-skin
+                                       chip-default ">
+                                    资源整理方法
+                                </div>
+                            </div>
+                            <div class="notebook-page dotted"></div>
+                        </div>
+                    </div>
+                    
+                </a>
+                
+                
             </div>
         </div>
-        <hr class="clearfix">
-
-        
-
-        
-
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                <p><img src="https://1999684.github.io/picx-images-hosting/ownpOrc81LDhNf3.45jaehtxs.webp"></p>
-<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>眼馋Mac 系统上空格预览的功能很久了？这不就有了</p>
-<p>QuickLook就是一款让用户在 Windows 系统下单机空格键就能实现文件预览的功能，与 Mac 系统使用体验几乎一致。虽然已经上架微软应用商店，但还是建议从Github上下载。</p>
-<p><img src="https://img2.imgtp.com/2024/05/10/jX4O2NE1.png"></p>
-<p>当然了，QuickLook默认没有添加对office文件的支持，不过这难不倒万能的开发者们。</p>
-<p>通过插件支持实现他们吧。</p>
-<p><img src="https://img2.imgtp.com/2024/05/10/5cj6sIg5.png"></p>
-<p>目前能够通过添加插件支持的文件格式，除了office文档之外，还有“.epub”、“.shp”、“.otf“、”ttf”、“.3ds”等特殊文件格式。(“”.ipynb”的插件不好用，不推荐)</p>
-<p><img src="https://img2.imgtp.com/2024/05/10/gMCyFpNv.png"></p>
-<p>顺便一提，pdf的预览比我双击打开还要好用。绝了，反应也超快的。酷~</p>
-<p><img src="https://img2.imgtp.com/2024/05/10/OwNnJOlh.png"></p>
-<p>在预览窗口可以进一步查看文件详细信息，为了显示方便可以直接将窗口置顶显示（无敌的功能！！！），如果还需进一步操作可以用默认格式关联软件打开文件。</p>
-<p>而在预览视频&#x2F;音频文件时，QuickLook类似一个迷你播放器，支持进度条调节，可操作性更高。（懒，不截图了）</p>
-<h1 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h1><p><a target="_blank" rel="noopener" href="https://github.com/QL-Win/QuickLook">QuickLook</a></p>
-
-                
-            </div>
-            <hr/>
-
-            
-
-    <div class="reprint" id="reprint-statement">
-        
-            <div class="reprint__author">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-user">
-                        文章作者:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">ZTGD</a>
-                </span>
-            </div>
-            <div class="reprint__type">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-link">
-                        文章链接:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="http://blog.ztgdblog.icu/2024/05/10/%E5%B7%A5%E5%85%B7_02_QuickLook/">http://blog.ztgdblog.icu/2024/05/10/%E5%B7%A5%E5%85%B7_02_QuickLook/</a>
-                </span>
-            </div>
-            <div class="reprint__notice">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-copyright">
-                        版权声明:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    本博客所有文章除特別声明外，均采用
-                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    许可协议。转载请注明来源
-                    <a href="/about" target="_blank">ZTGD</a>
-                    !
-                </span>
-            </div>
-        
     </div>
-
-    <script async defer>
-      document.addEventListener("copy", function (e) {
-        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
-        M.toast({html: toastHTML})
-      });
-
-      function navToReprintStatement() {
-        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
-      }
-    </script>
+</div>
 
 
+    
 
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
-                    
-                        <div class="article-tag">
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2024/06/20/04-http1/">
+                        <div class="card-image tag-image">
                             
-                                <a href="/tags/%E5%B7%A5%E5%85%B7/">
-                                    <span class="chip bg-color">工具</span>
-                                </a>
+                            
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="04_http1">
+                            
+                            <span class="card-title">04_http1</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                HTTP 状态码HTTP 状态码（英语：HTTP Status Code）是用以表示网页服务器 超文本传输协议 响应状态的 3 位数字代码。它由 RFC 2616 规范定义的，并得到 RFC 2518、RFC 2817、RFC 2295、R
                             
                         </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
                     
-                </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
-<div id="article-share">
-
-    
-    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/libs/share/js/social-share.min.js"></script>
-    
-
-    
-
-</div>
-
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                            <span class="chip bg-color">前端</span>
+                        </a>
+                        
+                        <a href="/tags/http/">
+                            <span class="chip bg-color">http</span>
+                        </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
             
         </div>
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-<article id="prenext-posts" class="prev-next articles">
-    <div class="row article-row">
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
-            <div class="card">
-                <a href="/2024/06/18/%E5%B7%A5%E5%85%B7_03_PotatoVN/">
-                    <div class="card-image">
-                        
-                        <img src="https://github.com/1999684/picx-images-hosting/raw/master/artical/1718718824262.jpg" class="responsive-img" alt="工具推荐-03 PotatoVN：Visual Novel管理软件">
-                        
-                        <span class="card-title">工具推荐-03 PotatoVN：Visual Novel管理软件</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-06-18
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
-                                    工具
-                                </a>
-                            
-                            <a href="/categories/%E8%B5%84%E6%BA%90%E6%95%B4%E7%90%86%E6%96%B9%E6%B3%95/" class="post-category">
-                                    资源整理方法
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%B7%A5%E5%85%B7/">
-                        <span class="chip bg-color">工具</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%B8%B8%E6%88%8F/">
-                        <span class="chip bg-color">游戏</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%B5%84%E6%BA%90%E6%95%B4%E7%90%86/">
-                        <span class="chip bg-color">资源整理</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2024/05/08/%E5%B7%A5%E5%85%B7_01_trilium/">
-                    <div class="card-image">
-                        
-                        <img src="https://github.com/1999684/picx-images-hosting/raw/master/N21FzxZuHBDYGK7.6ik53wbnce.webp" class="responsive-img" alt="工具推荐-01 Trilium:个人知识库的超高自由度编辑">
-                        
-                        <span class="card-title">工具推荐-01 Trilium:个人知识库的超高自由度编辑</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-08
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
-                                    工具
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%B7%A5%E5%85%B7/">
-                        <span class="chip bg-color">工具</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-    </div>
-</article>
-
-</div>
-
-
-<script>
-    $('#articleContent').on('copy', function (e) {
-        // IE8 or earlier browser is 'undefined'
-        if (typeof window.getSelection === 'undefined') return;
-
-        var selection = window.getSelection();
-        // if the selection is short let's not annoy our users.
-        if (('' + selection).length < Number.parseInt('120')) {
-            return;
-        }
-
-        // create a div outside of the visible area and fill it with the selected text.
-        var bodyElement = document.getElementsByTagName('body')[0];
-        var newdiv = document.createElement('div');
-        newdiv.style.position = 'absolute';
-        newdiv.style.left = '-99999px';
-        bodyElement.appendChild(newdiv);
-        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
-
-        // we need a <pre> tag workaround.
-        // otherwise the text inside "pre" loses all the line breaks!
-        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE' || selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
-            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
-        }
-
-        var url = document.location.href;
-        newdiv.innerHTML += '<br />'
-            + '来源: ZTGD.slowly<br />'
-            + '文章作者: ZTGD<br />'
-            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
-            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
-
-        selection.selectAllChildren(newdiv);
-        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
-    });
-</script>
-
-
-<!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
-
-
-
-<!-- 代码语言 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-
-
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
-
-
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget card" style="background-color: white;">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
-
-    
-
+    </article>
 </main>
 
 
@@ -977,7 +863,7 @@ QuickLook就是一款让用户在 Windows 系统下单机空格键就能实现�
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">7k</span>
+                        class="white-color">8.8k</span>
             
             
             
