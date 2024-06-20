@@ -2317,3 +2317,17 @@ body.DarkMode .theme-btn:hover {
     width: 8px;
     height: 15px;
 }
+
+/* 设置头像旋转 */
+.frind-ship .title img {
+    object-fit: contain;
+    transition: all 1s;
+}
+
+.friend-div:hover .title img {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}

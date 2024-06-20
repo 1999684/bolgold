@@ -168,17 +168,6 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/navigation" class="waves-effect waves-light">
-      
-      <i class="fa fa-chevron-circle-right" style="zoom: 0.6;"></i>
-      
-      <span>网站</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
     <a href="/list" class="waves-effect waves-light">
 
       
@@ -222,11 +211,45 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/others" class="waves-effect waves-light">
+    <a href="" class="waves-effect waves-light">
+
       
       <i class="fa fa-star" style="zoom: 0.6;"></i>
       
       <span>others</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/navigation">
+          
+          <i class="fa fa-chevron-circle-right" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>网站</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/others">
+          
+          <i class="fa fa-star" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>其他</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
     </a>
     
   </li>
@@ -351,17 +374,6 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/navigation" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fa fa-chevron-circle-right"></i>
-			
-			网站
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
 		<a href="javascript:;">
 			
 				<i class="fa-fw fa fa-list"></i>
@@ -407,11 +419,46 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/others" class="waves-effect waves-light">
+		<a href="javascript:;">
 			
-			    <i class="fa-fw fa fa-star"></i>
+				<i class="fa-fw fa fa-star"></i>
 			
 			others
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/navigation " style="margin-left:75px">
+				  
+				   <i class="fa fa fa-chevron-circle-right" style="position: absolute;left:50px" ></i>
+			      
+		          <span>网站</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/others " style="margin-left:75px">
+				  
+				   <i class="fa fa fa-star" style="position: absolute;left:50px" ></i>
+			      
+		          <span>其他</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
 		</a>
           
         </li>
@@ -520,21 +567,21 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">6</a></span>
+    <span class="count"><a href="/">7</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">4</a></span>
+    <span class="count"><a href="/categories">5</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">8</a></span>
+    <span class="count"><a href="/tags">9</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -550,21 +597,21 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">6</a></span>
+    <span class="count"><a href="/">7</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">4</a></span>
+    <span class="count"><a href="/categories">5</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">8</a></span>
+    <span class="count"><a href="/tags">9</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -724,7 +771,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,3,3],
+                data: [0,0,0,0,0,0,0,0,0,0,0,3,4],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -766,7 +813,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"笔记","value":3},{"name":"教程","value":2},{"name":"任天堂直面会","value":1},{"name":"资源整理方法","value":1}],
+                data: [{"name":"Markdown","value":2},{"name":"Docker","value":1},{"name":"hexo","value":1},{"name":"工具","value":3},{"name":"资源整理方法","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -790,7 +837,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["工具","markdown","技术","笔记","游戏","任天堂直面会","教程","资源整理"]
+                data: ["笔记","工具","markdown","技术","docker","hexo","Matery主题","游戏","资源整理"]
             }
         ],
         yAxis: [
@@ -803,7 +850,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [3,1,1,1,1,1,1,1],
+                data: [3,3,2,1,1,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -864,7 +911,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">9k</span>
+                        class="white-color">7k</span>
             
             
             

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="我的小介绍, ZTGD.slowly">
+    <meta name="keywords" content="分类: Docker, ZTGD.slowly">
     <meta name="description" content="I know what I want to do, and it makes sense to get going.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>我的小介绍 | ZTGD.slowly</title>
+    <title>分类: Docker | ZTGD.slowly</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -531,338 +531,300 @@
 
 <main class="content">
 
-    <div id="aboutme" class="container about-container">
-        <div class="card">
-            <div class="card-content">
-                <div class="card-content article-card-content">
-                    <div id="articleContent" data-aos="fade-up">
-                        <center>
-    <h1 style="font-size: 40px;">个人信息</h1>
-    <h2>
-        袁加铖
-    </h2>
-    <br>
-</center>
+    <style>
+    /* 文章分类书本样式 */
+    .chip-container .tag-chips {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
-<h2>个人概况</h2>
+    .chip-container .tag-chips a {
+        margin: 0 7px 10px;
+    }
 
-<table>
-<thead>
-<tr>
-<th>学  校：</th>
-<th>扬州大学</th>
-<th>院  系：</th>
-<th>信息工程学院</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>专  业：</td>
-<td>软件工程</td>
-<td>电  话：</td>
-<td>135****0171</td>
-</tr>
-<tr>
-<td>学  历：</td>
-<td>本科在读</td>
-<td>现 居 地：</td>
-<td>江苏南通</td>
-</tr>
-<tr>
-<td>QQ：</td>
-<td>1927552117</td>
-<td>E-mail：</td>
-<td></td>
-</tr>
-<tr>
-<td>Github：</td>
-<td><a target="_blank" rel="noopener" href="https://github.com/1999684">https://github.com/1999684</a></td>
-<td>个人网站：</td>
-<td><a href="https://blog.ztgdblog.icu/">https://blog.ztgdblog.icu</a></td>
-</tr>
-</tbody></table>
-<h2>当前所在</h2>
+    .chip-container .chip {
+        max-width: calc(100% / 4);
+        min-width: 10em;
+        height: 200px;
+        position: relative;
+        transition: .5s linear;
+        padding: 19px 0;
+        line-height: 20px;
+        z-index: 990;
+        border-radius: 5px 15px 15px 5px;
+        transform-origin: left center 0;
+    }
 
-<p>在扬州大学| |信息工程学院| |软件工程专业学习。25级毕业生</p>
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../_data/aboutme.css">
-</head>
-<style>
-  body {  
-    font-family: Arial, sans-serif;  
-    margin: 0;  
-    padding: 20px;  
-  }  
-  h1 {  
-    text-align: center;  
-    color: #333;  
-  }
-  section {
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }  
-  p, ul {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  .waterfall-container {
-    text-align: center;
-  }
-  .waterfall {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  .card1-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .card1 {
-    display: flex;
-    flex-direction: column;
-    width: 310px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-sizing: border-box;
-    transition: box-shadow 0.3s ease;
-    text-align: left;
-    border-radius: 15%;
-  }
-  .card1 .description {
-    display: flex;  
-    flex-direction: column;
-  }
-  .p-container {  
-    display: flex;  
-    justify-content: space-between;  
-    align-items: center; /* 如果需要垂直居中 */  
-    margin-bottom: 10px;/* 如果需要给下面的元素留出一些空间 */  
-  }  
-  .left-p, .right-p {  
-    font-size: 13px;
-    /* 这里可以添加更多样式来定制左右两个p标签的外观 */  
-  }
-  .card1 .title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  .img-limit {  
-    width: 95%; /* 你可以根据需要设置宽度 */  
-    height: auto; /* 保持图片的原始宽高比 */  
-    border-radius: 25%;
-  } 
-  .image-container {  
-    display: flex;  
-    justify-content: center; /* 水平居中 */  
-    align-items: center; /* 垂直居中（如果图片容器有固定高度） */  
-    margin-top: 10px; /* 可选，给图片上方添加一些空间 */  
-  } 
-  .card1:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 320px;
-  }
-  .card1 .description {
-    font-size: 12px;
-    color: #381717;
-  }
-  .button {  
-    /* 这里可以添加按钮的样式 */  
-    margin-bottom: 10px; /* 添加垂直间距 */  
-    margin-left: 2px;
-    margin-right: 2px;
-    width: 200px;
-    background-color:transparent;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    color: #000000;
-    font-family: "楷体";
-    font-size: 20px;
-    font-weight: 100;
-    padding: 14px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-  } 
-  .button:hover {
-    background: #eeeef1;
-    width: 205px;
-    opacity: 0.5;
-    color: #020218;
-    -webkit-border-radius: 14px;
-    -moz-border-radius: 14px;
-    border-radius: 14px;
-    text-decoration: none;
-  }
-  .popup {  
-    position: fixed;  
-    top: 50%;  
-    left: 50%;  
-    transform: translate(-50%, -50%);  
-    width: 800px; /* 根据需要调整 */  
-    max-height: 500px; /* 设置一个最大高度 */  
-    overflow-y: auto;
-    max-width: 90%; /* 防止弹窗过大 */  
-    padding: 20px;  
-    background-color: #fff;  
-    border: 1px solid #ccc;  
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  
-    z-index: 1000; /* 确保弹窗在顶层 */  
-    display: none; /* 默认隐藏弹窗 */  
-    /*padding-right: 40px;*/
-    border-radius: 5px;
-  }
-  .popup .title {  
-    font-size: 35px;  
-    font-family: "楷体";
-    font-weight: bold;  
-    margin-bottom: 10px;  
-  }
-  .popup .close-button {  
-    position: absolute; /* 绝对定位按钮 */  
-    top: 10px; /* 距离弹窗顶部距离 */  
-    right: 10px; /* 距离弹窗右侧距离 */  
-    /* 其他按钮样式 */  
-    cursor: pointer;  
-    border: none;  
-    background-color: #ccc;  
-    padding: 5px 10px;  
-  }
-  .popup .description {  
-  font-size: 25px;  
-    color: #061255;  
-  }
-  .overlay {  
-    position: fixed;  
-    top: 0;  
-    left: 0;  
-    width: 100%;  
-    height: 100%;  
-    background-color: rgba(0, 0, 0, 0.5);  
-    z-index: 999; /* 确保在弹窗之下 */
-    display: none;
-  }
+    .chip-container .notebook-cover::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: calc(100% + 2px);
+        top: -1px;
+        z-index: 100;
+        border-radius: 2px;
+        right: 25px;
+        transition: 2s ease;
+        background: linear-gradient(to right, #1e606e 0, #2e95aa 12%, #1e606e 25%, #2e95aa 37%, #1e606e 50%, #2e95aa 62%, #1e606e 75%, #2e95aa 87%, #1e606e 100%);
+    }
+
+    .chip .notebook-skin {
+        height: 50px;
+        width: 100%;
+        background: #e8e8e0;
+        margin-top: 42px;
+        padding: 10px 32px 64px 10px;
+        font-size: 19px;
+        position: relative;
+        z-index: 10;
+        color: #222;
+        text-align: left;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    }
+
+    .chip .notebook-skin:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 15px;
+        left: 0;
+        bottom: 0;
+        background: #cddc39;
+    }
+
+    .notebook-cover {
+        background: #cc4b48;
+        height: 200px;
+        width: 140px;
+        position: absolute;
+        border-radius: 5px 15px 15px 5px;
+        z-index: 10;
+        transition: .5s linear;
+        transform-style: preserve-3d;
+        transform-origin: left center 0;
+    }
+
+    .moleskine-wrapper {
+        max-width: calc(100% / 4);
+        min-width: 10em;
+    }
+
+    .moleskine-notebook:hover .notebook-cover {
+        transform: rotateY(-50deg);
+        z-index: 99;
+        box-shadow: 20px 10px 50px rgba(0, 0, 0, .2);
+    }
+
+    .moleskine-notebook {
+        height: 200px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        transition: .5s linear;
+        border-radius: 5px 15px 15px 5px;
+        transform-origin: left center 0;
+    }
+
+    .moleskine-notebook:hover {
+        transform: rotateZ(-10deg);
+    }
+
+    .notebook-page.dotted {
+        background: linear-gradient(to bottom, #fbfae8 9px, #e4e4e4 1px);
+        background-size: 100% 10px;
+    }
+
+    .chip-container .chip:hover {
+        filter: invert(.1);
+    }
+
+    .notebook-page {
+        height: 100%;
+        width: 140px;
+        position: absolute;
+        top: 10px;
+        background-color: #fbfae8;
+        z-index: 0;
+        border-radius: 5px 16px 16px 5px;
+        overflow: hidden;
+    }
 </style>
-<body>
-    <section>
-        <h2>工作经历</h2>
-        <div class="card1-container">
-            <div class="card1" onclick="showPopup(this)">
-                <div class="title">暂无</div>  
-                <div class="description">  
-                    <div class="p-container">  
-                        <p class="left-p">先空着</p>  
-                        <p class="right-p">XXXX年-至今</p>  
-                    </div>
-                    <div class="image-container">  
-                        <img src="https://github.com/1999684/picx-images-hosting/raw/master/N21FzxZuHBDYGK7.6ik53wbnce.webp" class="img-limit" />  
-                    </div> 
-                </div>
-                <ul class="hidden-list" style="display: none;">
-                  <li>先空着</li>
-              </ul> 
-            </div> 
-            <div class="card1" onclick="showPopup(this)">
-                <div class="title">暂无</div>  
-                <div class="description">
-                    <div class="p-container">  
-                        <p class="left-p">先空着</p>  
-                        <p class="right-p">XXXX年-至今</p>  
-                    </div>
-                    <div class="image-container">  
-                        <img src="" class="img-limit" />  
-                    </div>
-                </div>
-                <ul class="hidden-list" style="display: none;">  
-                    <li>先空着</li>   
-                </ul> 
+
+
+
+<div id="category-cloud" class="container chip-container">
+    <div class="card">
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-bookmark"></i>&nbsp;&nbsp;文章分类
             </div>
-        </div>
-    </section>  
-    <section>  
-        <h2>掌握的技能</h2>  
-        <center>
-            <div class="waterfall-container">  
-                <div class="waterfall">  
-                    <button class="button" >熟练掌握Java、Python等编程语言</button>  
-                    <button class="button" >熟悉HTML、CSS、JavaScript等前端技术</button>  
-                    <button class="button" >熟练使用Spring Boot、MySQL等后端技术</button>  
-                    <button class="button" >熟练使用Spring Boot、MySQL等后端技术</button> 
-                    <!-- 更多的按钮... -->  
-                </div>  
-            </div>  
-        </center>
-    </section>
-    <div class="popup" id="cardPopup">   
-      <div class="title" id="popupTitle"></div>
-      <div class="description" id="popupDescription"></div>
-      <ul id="popupList"></ul>
-  </div>
-    <div class="overlay" onclick="hidePopup()"></div>
-</body>
-<script>
-    window.onload = function() {  
-    // 获取所有卡片  
-    var cards = document.querySelectorAll('.card1');  
-    // 预设的颜色数组  
-    var colors = ['rgb(75, 139, 236, 0.5)', 'rgb(21, 250, 21, 0.5)', 'rgb(236, 155, 48, 0.5)', 'rgb(253, 9, 9, 0.5)', 'rgb(0, 0, 255, 0.4)', 'rgb(122, 197, 205, 0.5)'];  
-    // 遍历每个卡片  
-    cards.forEach(function(card1, index) {  
-        // 随机选择一个颜色  
-        var randomColor = colors[Math.floor(Math.random() * colors.length)];  
-        // 设置卡片的背景色  
-        card1.style.backgroundColor = randomColor;  
-    });  
-    };
-    function showPopup(card) {
-      const popup = document.getElementById('cardPopup');
-      const overlay = document.querySelector('.overlay');
-      const title = card.querySelector('.title').textContent;
-      const description = card.querySelector('.description').innerHTML;
-      const hiddenList = card.querySelector('.hidden-list');
-      const popupList = popup.querySelector('#popupList');  
-      while (popupList.firstChild) {  
-        popupList.removeChild(popupList.firstChild);  
-      }
-      hiddenList.childNodes.forEach(node => {  
-        if (node.nodeType === Node.ELEMENT_NODE) {  
-            popupList.appendChild(node.cloneNode(true));  
-        }  
-    });
-    popup.querySelector('#popupTitle').textContent = title;
-    popup.querySelector('#popupDescription').innerHTML = description;
-    popup.style.display = 'block';
-    overlay.style.display = 'block';
-    popup.addEventListener('click', function(event) {
-        if (event.target.classList.contains('no-close')) {
-            return;
-        }
-        hidePopup();
-    });
-}// 显示弹窗的函数
-    function hidePopup() {
-      const popup = document.getElementById('cardPopup');
-      const overlay = document.querySelector('.overlay');
-      popup.style.display = 'none';
-      overlay.style.display = 'none';
-    }// 隐藏弹窗的函数
-</script>
-</html>
+            <div class="tag-chips">
+                
+                
+                
+                <a href="/categories/Markdown/" title="Markdown: 2">
+                    <div class="moleskine-wrapper">
+                        <div class="moleskine-notebook">
+                            <div class="chip notebook-cover center-align waves-effect waves-light
+                               chip-default "
+                                style="background-color: #F9EBEA;">
+                                <div
+                                    class="notebook-skin
+                                       chip-default ">
+                                    Markdown
+                                </div>
+                            </div>
+                            <div class="notebook-page dotted"></div>
+                        </div>
                     </div>
-                </div>
+                    
+                </a>
+                
+                
+                <a href="/categories/Docker/" title="Docker: 1">
+                    <div class="moleskine-wrapper">
+                        <div class="moleskine-notebook">
+                            <div class="chip notebook-cover center-align waves-effect waves-light
+                               chip-active "
+                                style="background-color: #F5EEF8;">
+                                <div
+                                    class="notebook-skin
+                                       chip-active ">
+                                    Docker
+                                </div>
+                            </div>
+                            <div class="notebook-page dotted"></div>
+                        </div>
+                    </div>
+                    
+                </a>
+                
+                
+                <a href="/categories/hexo/" title="hexo: 1">
+                    <div class="moleskine-wrapper">
+                        <div class="moleskine-notebook">
+                            <div class="chip notebook-cover center-align waves-effect waves-light
+                               chip-default "
+                                style="background-color: #D5F5E3;">
+                                <div
+                                    class="notebook-skin
+                                       chip-default ">
+                                    hexo
+                                </div>
+                            </div>
+                            <div class="notebook-page dotted"></div>
+                        </div>
+                    </div>
+                    
+                </a>
+                
+                
+                <a href="/categories/%E5%B7%A5%E5%85%B7/" title="工具: 3">
+                    <div class="moleskine-wrapper">
+                        <div class="moleskine-notebook">
+                            <div class="chip notebook-cover center-align waves-effect waves-light
+                               chip-default "
+                                style="background-color: #E8F8F5;">
+                                <div
+                                    class="notebook-skin
+                                       chip-default ">
+                                    工具
+                                </div>
+                            </div>
+                            <div class="notebook-page dotted"></div>
+                        </div>
+                    </div>
+                    
+                </a>
+                
+                
+                <a href="/categories/%E8%B5%84%E6%BA%90%E6%95%B4%E7%90%86%E6%96%B9%E6%B3%95/" title="资源整理方法: 1">
+                    <div class="moleskine-wrapper">
+                        <div class="moleskine-notebook">
+                            <div class="chip notebook-cover center-align waves-effect waves-light
+                               chip-default "
+                                style="background-color: #FEF9E7;">
+                                <div
+                                    class="notebook-skin
+                                       chip-default ">
+                                    资源整理方法
+                                </div>
+                            </div>
+                            <div class="notebook-page dotted"></div>
+                        </div>
+                    </div>
+                    
+                </a>
+                
+                
             </div>
         </div>
     </div>
+</div>
+
+
+    
+
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2024/06/18/01_docker(1)/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="docker常用命令整理">
+                            
+                            <span class="card-title">docker常用命令整理</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-18
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Docker/" class="post-category">
+                                    Docker
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                            <span class="chip bg-color">笔记</span>
+                        </a>
+                        
+                        <a href="/tags/docker/">
+                            <span class="chip bg-color">docker</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
 </main>
+
+
 
 
     <footer class="page-footer bg-color">
