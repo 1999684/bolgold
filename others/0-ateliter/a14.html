@@ -576,10 +576,204 @@
 </table>
 <p>游玩记录</p>
 <blockquote>
-<ul>
-<li>111</li>
-<li></li>
-</ul>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .card1-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .p-container {  
+            display: flex;  
+            justify-content: space-between;  
+            align-items: center;
+            margin-bottom: 5px;
+        }  
+        .card1 {
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: width 0.3s, height 0.3s;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            border-radius: 15%;
+        }  
+        .card1 .description {
+            font-size: 12px;
+            color: #381717;
+        }
+        .card1:hover {
+            width: 310px;
+            height: 210px;
+        }  
+        .card1-content {
+            transition: all 0.3s ease-in-out;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px;
+            z-index: 1;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+        }
+        .popup {  
+            position: fixed;  
+            top: 50%;  
+            left: 50%;  
+            transform: translate(-50%, -50%);  
+            width: 800px;
+            max-height: 500px;
+            overflow-y: auto;
+            max-width: 90%;
+            padding: 20px;  
+            background-color: #fff;  
+            border: 1px solid #ccc;  
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  
+            z-index: 1000;
+            display: none;
+            border-radius: 5px;
+        }
+        .popup .title {  
+            font-size: 35px;  
+            font-family: "楷体";
+            font-weight: bold;  
+            margin-bottom: 10px;  
+        }
+        .popup .close-button {  
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;  
+            border: none;  
+            background-color: #ccc;  
+            padding: 5px 10px;  
+        }
+        .popup .description {  
+            font-size: 25px;  
+            color: #061255;  
+        }
+        .overlay {  
+            position: fixed;  
+            top: 0;  
+            left: 0;  
+            width: 100%;  
+            height: 100%;  
+            background-color: rgba(0, 0, 0, 0.5);  
+            z-index: 999;
+            display: none;
+        }
+        .img-limit {  
+            width: 95%;
+            height: auto;
+            border-radius: 25%;
+        } 
+        .image-container {  
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        } 
+        .left-p {  
+            margin-left: 10%;
+            font-family: "楷体";
+            font-size: 20px; 
+        }
+        .card1 .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            margin-left: 5%;
+        }
+        .show {
+            margin-left: 8%;
+            font-size: 18px;
+        }
+        .showlist {
+            margin-left: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="card1-container">
+        <!--添加卡片-->
+        <div class="card1" onclick="showPopup(this)"> 
+            <div class="title">再次打开，有感</div>  
+            <div class="description">  
+                <div class="p-container">  
+                    <p class="left-p">06.28</p>  
+                </div>
+                <p class="show">黄昏系列真的绝了</p>
+            </div>
+            <ul class="hidden-list" style="display: none;">
+                <hr>
+                <p></p>
+                <li class="showlist">实在是太喜欢爱夏的音乐了</li>
+            </ul> 
+        </div> 
+    </div>
+    <div class="popup" id="cardPopup">   
+        <div class="title" id="popupTitle"></div>
+        <div class="description" id="popupDescription"></div>
+        <ul id="popupList"></ul>
+    </div>
+    <div class="overlay" onclick="hidePopup()"></div>
+    <script>
+        window.onload = function() {  
+            var cards = document.querySelectorAll('.card1');  
+            var colors = ['rgb(75, 139, 236, 0.5)', 'rgb(21, 250, 21, 0.5)', 'rgb(236, 155, 48, 0.5)', 'rgb(253, 9, 9, 0.5)', 'rgb(0, 0, 255, 0.4)', 'rgb(122, 197, 205, 0.5)'];  
+            cards.forEach(function(card1, index) {  
+                var randomColor = colors[Math.floor(Math.random() * colors.length)];  
+                card1.style.backgroundColor = randomColor;  
+            });  
+        };
+    function showPopup(card) {
+      const popup = document.getElementById('cardPopup');
+      const overlay = document.querySelector('.overlay');
+      const title = card.querySelector('.title').textContent;
+      const description = card.querySelector('.description').innerHTML;
+      const hiddenList = card.querySelector('.hidden-list');
+      const popupList = popup.querySelector('#popupList');  
+      while (popupList.firstChild) {  
+        popupList.removeChild(popupList.firstChild);  
+      }
+      hiddenList.childNodes.forEach(node => {  
+        if (node.nodeType === Node.ELEMENT_NODE) {  
+            popupList.appendChild(node.cloneNode(true));  
+        }  
+    });
+    popup.querySelector('#popupTitle').textContent = title;
+    popup.querySelector('#popupDescription').innerHTML = description;
+    popup.style.display = 'block';
+    overlay.style.display = 'block';
+    popup.addEventListener('click', function(event) {
+        if (event.target.classList.contains('no-close')) {
+            return;
+        }
+        hidePopup();
+    });
+    }// 显示弹窗的函数
+    function hidePopup() {
+      const popup = document.getElementById('cardPopup');
+      const overlay = document.querySelector('.overlay');
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+    }// 隐藏弹窗的函数
+    </script>
+</body>
+</html>
 </blockquote>
 
                     </div>
