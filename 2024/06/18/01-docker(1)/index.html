@@ -5,7 +5,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="docker常用命令整理, ZTGD">
-    <meta name="description" content="">
+    <meta name="description" content="Docker：查看Docker版本信息了解当前安装的Docker版本，可以使用以下命令：
+1docker version
+该命令会显示Docker的客户端版本和服务器版本等详细信息。
+拉取镜像使用Docker之前，首先需要从Docker H">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -563,21 +566,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-06-20
+                    2024-07-23
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    971
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -597,7 +600,64 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="Docker："><a href="#Docker：" class="headerlink" title="Docker："></a>Docker：</h2><h3 id="查看Docker版本信息"><a href="#查看Docker版本信息" class="headerlink" title="查看Docker版本信息"></a>查看Docker版本信息</h3><p>了解当前安装的Docker版本，可以使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker version</span><br></pre></td></tr></table></figure>
+<p>该命令会显示Docker的客户端版本和服务器版本等详细信息。</p>
+<h3 id="拉取镜像"><a href="#拉取镜像" class="headerlink" title="拉取镜像"></a>拉取镜像</h3><p>使用Docker之前，首先需要从Docker Hub或私有仓库中拉取所需的镜像。以下是拉取镜像的常用命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull [镜像名称]:[标签]</span><br></pre></td></tr></table></figure>
+<p>其中，[镜像名称]表示要拉取的镜像名称，[标签]表示镜像的版本标签。</p>
+<h3 id="查看本地镜像列表"><a href="#查看本地镜像列表" class="headerlink" title="查看本地镜像列表"></a>查看本地镜像列表</h3><p>想要查看已经拉取到本地的镜像列表，可以使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
+<p>该命令将列出本地所有的镜像，包括镜像名称、标签、大小等信息。</p>
+<h3 id="运行容器"><a href="#运行容器" class="headerlink" title="运行容器"></a>运行容器</h3><p>使用Docker运行容器是使用Docker的核心功能之一。以下是运行容器的常用命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run [选项] [镜像名称] [命令]</span><br></pre></td></tr></table></figure>
+<p>其中，[选项]可以设置容器的各种选项，[镜像名称]表示要运行的容器所使用的镜像，[命令]表示容器启动后要执行的命令。</p>
+<h3 id="查看正在运行的容器列表"><a href="#查看正在运行的容器列表" class="headerlink" title="查看正在运行的容器列表"></a>查看正在运行的容器列表</h3><p>要查看当前正在运行的容器列表，可以使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure>
+<p>此命令将显示正在运行的容器的相关信息，如容器ID、镜像名称、创建时间等。</p>
+<h3 id="停止容器"><a href="#停止容器" class="headerlink" title="停止容器"></a>停止容器</h3><p>如果需要停止正在运行的容器，可以使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop [容器ID]</span><br></pre></td></tr></table></figure>
+<p>其中，[容器ID]表示要停止的容器的ID。</p>
+<h3 id="删除容器"><a href="#删除容器" class="headerlink" title="删除容器"></a>删除容器</h3><p>如果需要删除已经停止的容器，可以使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rm [容器ID]</span><br></pre></td></tr></table></figure>
+<p>同样，[容器ID]表示要删除的容器的ID。</p>
+<h3 id="查看容器日志"><a href="#查看容器日志" class="headerlink" title="查看容器日志"></a>查看容器日志</h3><p>想要查看容器的日志信息，可以使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker logs [容器ID]</span><br></pre></td></tr></table></figure>
+<p>该命令将显示指定容器的日志输出。</p>
+<h2 id="Docker-Compose-安装和基本使用"><a href="#Docker-Compose-安装和基本使用" class="headerlink" title="Docker Compose - 安装和基本使用"></a>Docker Compose - 安装和基本使用</h2><p>Docker Compose是一个用于定义和运行多个Docker容器的工具。它使用一个YAML文件来配置应用程序的服务、网络和卷等。</p>
+<h3 id="安装Docker-Compose"><a href="#安装Docker-Compose" class="headerlink" title="安装Docker Compose"></a>安装Docker Compose</h3><p>要安装Docker Compose，可以按照以下步骤进行操作：</p>
+<ol>
+<li><p>首先，确保已经安装了Docker。如果尚未安装Docker，可以按照<a target="_blank" rel="noopener" href="https://www.runoob.com/docker/docker-tutorial.html">网上文档</a>进行安装。</p>
+</li>
+<li><p>打开终端或命令行窗口，并输入以下命令来下载最新的Docker Compose二进制文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo curl -L &quot;https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>接下来，将下载的二进制文件赋予可执行权限：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod +x /usr/local/bin/docker-compose</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>最后，验证安装是否成功：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose --version</span><br></pre></td></tr></table></figure>
+
+<p>如果成功安装，将显示Docker Compose的版本信息。</p>
+</li>
+</ol>
+<h3 id="编写Docker-Compose文件"><a href="#编写Docker-Compose文件" class="headerlink" title="编写Docker Compose文件"></a>编写Docker Compose文件</h3><p>在开始使用Docker Compose之前，需要编写一个Docker Compose文件来定义应用程序的服务、网络和卷等。Docker Compose使用YAML语法来编写配置文件。</p>
+<p>以下是一个简单的示例Docker Compose文件：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">&#x27;3&#x27;</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">web:</span></span><br><span class="line">    <span class="attr">build:</span> <span class="string">.</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;8080:80&quot;</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./app:/var/www/html</span></span><br><span class="line">  <span class="attr">db:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">mysql:5.7</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">MYSQL_ROOT_PASSWORD=mysecretpassword</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">MYSQL_DATABASE=myapp</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">MYSQL_USER=myuser</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">MYSQL_PASSWORD=mypassword</span></span><br></pre></td></tr></table></figure>
+
+<p>上述示例定义了两个服务：web和db。web服务使用当前目录中的Dockerfile构建镜像，并将主机的8080端口映射到容器的80端口。此外，还将主机上的.&#x2F;app目录挂载到容器的&#x2F;var&#x2F;www&#x2F;html目录。</p>
+<p>db服务使用mysql:5.7镜像，并设置了一些环境变量来配置MySQL数据库。</p>
+<h3 id="运行Docker-Compose"><a href="#运行Docker-Compose" class="headerlink" title="运行Docker Compose"></a>运行Docker Compose</h3><p>要运行Docker Compose文件中定义的服务，可以使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up</span><br></pre></td></tr></table></figure>
+
+<p>该命令将根据配置文件创建并启动所有的服务。</p>
+<p>如果希望在后台运行服务，可以使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
+
+<p>要停止运行服务，可以使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose down</span><br></pre></td></tr></table></figure>
+
+
                 
             </div>
             <hr/>
@@ -992,7 +1052,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">11.3k</span>
+                        class="white-color">12.3k</span>
             
             
             
