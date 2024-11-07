@@ -1011,18 +1011,18 @@
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
     </div>
-    <div id="waline-comments" class="card-content" style="display: grid">
+    <div id="waline" class="card-content" style="display: grid">
     </div>
   </div>
   
 
   <!-- <script src="//cdn.jsdelivr.net/npm/@waline/client"></script> -->
-  <script src="https://unpkg.com/minivaline/dist/MiniValine.min.js"></script>
+  <script src="/libs/waline/Waline.js"></script>
   <script>
-    new MiniValine({
-        el: '#waline-comments',
-        backend: 'waline',
-        serverURL: 'https://chat.ztgdblog.icu', 
+    new Waline({
+        el: '#waline',
+        serverURL: 'https://chat.ztgdblog.icu',
+        avatar: 'mp'    
     });
   </script> 
             
