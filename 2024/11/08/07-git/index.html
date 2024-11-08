@@ -4,8 +4,22 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="resources, ZTGD的小窝">
-    <meta name="description" content="I know what I want to do, and it makes sense to get going.">
+    <meta name="keywords" content="Git 常用命令汇总, ZTGD的小窝">
+    <meta name="description" content="常规操作
+
+git push origin test 推送本地分支到远程仓库
+
+
+
+git rm -r --cached 文件&amp;#x2F;文件夹名字 取消文件被版本控制
+
+
+
+git reflog 获取执行过的命令
+
+
+
+git log -">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +31,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>resources | ZTGD的小窝</title>
+    <title>Git 常用命令汇总 | ZTGD的小窝</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -441,12 +455,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://1999684.github.io/picx-images-hosting/封面/image.8ad9wu18el.webp')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">resources</h1>
+                    <h1 class="description center-align post-title">Git 常用命令汇总</h1>
                 </div>
             </div>
         </div>
@@ -482,28 +496,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-05-07
+                    2024-11-08
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-05-07
+                    2024-11-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    4.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 mins. 分
+                    18 mins. 分
                 </div>
                 
 
@@ -523,7 +537,227 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="常规操作"><a href="#常规操作" class="headerlink" title="常规操作"></a>常规操作</h2><ul>
+<li><ul>
+<li><code>git push origin test</code> 推送本地分支到远程仓库</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git rm -r --cached</code> 文件&#x2F;文件夹名字 取消文件被版本控制</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git reflog</code> 获取执行过的命令</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git log --graph</code> 查看分支合并图</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git merge --no-ff -m &#39;合并描述&#39;</code> 分支名 不使用<code>Fast forward</code>方式合并，采用这种方式合并可以看到合并记录</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git check-ignore -v 文件名</code> 查看忽略规则</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git add -f 文件名</code> 强制将文件提交</li>
+</ul>
+</li>
+</ul>
+<h3 id="Git-创建项目仓库"><a href="#Git-创建项目仓库" class="headerlink" title="Git 创建项目仓库"></a>Git 创建项目仓库</h3><ul>
+<li><ul>
+<li><code>git init</code> 初始化</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git remote add origin url</code> 关联远程仓库</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git pull</code></li>
+</ul>
+</li>
+<li><ul>
+<li><code>git fetch</code> 获取远程仓库中所有的分支到本地</li>
+</ul>
+</li>
+</ul>
+<h3 id="忽略已加入到版本库中的文件"><a href="#忽略已加入到版本库中的文件" class="headerlink" title="忽略已加入到版本库中的文件"></a>忽略已加入到版本库中的文件</h3><ul>
+<li><ul>
+<li><code>git update-index --assume-unchanged file</code> 忽略单个文件</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git rm -r --cached 文件/文件夹名字</code> (. 忽略全部文件)</li>
+</ul>
+</li>
+</ul>
+<h3 id="取消忽略文件"><a href="#取消忽略文件" class="headerlink" title="取消忽略文件"></a>取消忽略文件</h3><p><code>git update-index --no-assume-unchanged file</code></p>
+<h3 id="拉取、上传免密码"><a href="#拉取、上传免密码" class="headerlink" title="拉取、上传免密码"></a>拉取、上传免密码</h3><p><code>git config --global credential.helper store</code></p>
+<h2 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h2><ul>
+<li><ul>
+<li><code>git branch</code> 创建分支</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git branch -b</code> 创建并切换到新建的分支上</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git checkout</code> 切换分支</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git branch</code> 查看分支列表</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git branch -v</code> 查看所有分支的最后一次操作</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git branch -vv</code> 查看当前分支</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git branch -b 分支名 origin/分支名</code> 创建远程分支到本地</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git branch --merged</code> 查看别的分支和当前分支合并过的分支</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git branch --no-merged</code> 查看未与当前分支合并的分支</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git branch -d 分支名</code> 删除本地分支</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git branch -D 分支名</code> 强行删除分支</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git push origin --delete 分支名</code> 删除远程仓库分支</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git merge 分支名</code> 合并分支到当前分支上</li>
+</ul>
+</li>
+</ul>
+<h2 id="暂存操作"><a href="#暂存操作" class="headerlink" title="暂存操作"></a>暂存操作</h2><ul>
+<li><ul>
+<li><code>git stash</code> 暂存当前修改</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git stash apply</code> 恢复最近的一次暂存</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git stash pop</code> 恢复暂存并删除暂存记录</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git stash list</code> 查看暂存列表</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git stash drop 暂存名</code>(例：stash@{0}) 移除某次暂存</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git stash clear</code> 清除暂存</li>
+</ul>
+</li>
+</ul>
+<h2 id="回退操作"><a href="#回退操作" class="headerlink" title="回退操作"></a>回退操作</h2><ul>
+<li><ul>
+<li><code>git reset --hard HEAD^</code> 回退到上一个版本</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git reset --hard commitId</code> 回退到某个版本</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git checkout -- file</code>撤销修改的文件(如果文件加入到了暂存区，则回退到暂存区的，如果文件加入到了版本库，则还原至加入版本库之后的状态)</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git reset HEAD file</code> 撤回暂存区的文件修改到工作区</li>
+</ul>
+</li>
+</ul>
+<h2 id="标签操作"><a href="#标签操作" class="headerlink" title="标签操作"></a>标签操作</h2><ul>
+<li><ul>
+<li><code>git tag 标签名</code> 添加标签(默认对当前版本)</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git tag 标签名 commitId</code> 对某一提交记录打标签</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git tag -a 标签名 -m &#39;描述&#39;</code> 创建新标签并增加备注</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git tag</code> 列出所有标签列表</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git show 标签名</code> 查看标签信息</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git tag -d 标签名</code> 删除本地标签</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git push origin 标签名</code> 推送标签到远程仓库</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git push origin --tags</code> 推送所有标签到远程仓库</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git push origin :refs/tags/标签名</code> 从远程仓库中删除标签</li>
+</ul>
+</li>
+</ul>
+<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><ul>
+<li><ul>
+<li><code>git remote -v</code>查看远程仓库地址</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git remote show origin</code>查看远程仓库详情信息</li>
+</ul>
+</li>
+</ul>
+<h2 id="查看某个-commit-提交属于哪个分支"><a href="#查看某个-commit-提交属于哪个分支" class="headerlink" title="查看某个 commit 提交属于哪个分支"></a>查看某个 commit 提交属于哪个分支</h2><ul>
+<li><ul>
+<li><code>git branch -l --contains &lt;commit_id&gt;</code> 本地分支</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git branch -r --contains &lt;commit_id&gt;</code> 远程分支</li>
+</ul>
+</li>
+<li><ul>
+<li><code>git branch --all --contains &lt;commit_id&gt;</code> 所有分支</li>
+</ul>
+</li>
+</ul>
+
                 
             </div>
             <hr/>
@@ -549,7 +783,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://ztgdblog.icu/resources/index.html">http://ztgdblog.icu/resources/index.html</a>
+                    <a href="http://ztgdblog.icu/2024/11/08/07-git/">http://ztgdblog.icu/2024/11/08/07-git/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -909,13 +1143,12 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/resources/index.html">
+                <a href="/2024/11/08/07-git/">
                     <div class="card-image">
                         
+                        <img src="https://1999684.github.io/picx-images-hosting/封面/image.8ad9wu18el.webp" class="responsive-img" alt="Git 常用命令汇总">
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="resources">
-                        
-                        <span class="card-title">resources</span>
+                        <span class="card-title">Git 常用命令汇总</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -926,7 +1159,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-11-08
                             </span>
                         <span class="publish-author">
                             
@@ -944,16 +1177,15 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/resources/index.html">
+                <a href="/2024/11/06/%E9%98%BF%E5%92%8C%E7%BE%8E%E5%9B%BE2/">
                     <div class="card-image">
                         
+                        <img src="https://1999684.github.io/picx-images-hosting/nagomi2/20240830_142000.2dopmowz0f.webp" class="responsive-img" alt="阿和美图~ 第二期">
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="resources">
-                        
-                        <span class="card-title">resources</span>
+                        <span class="card-title">阿和美图~ 第二期</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -964,17 +1196,28 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-11-06
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            ZTGD
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E9%98%BF%E5%92%8C/" class="post-category">
+                                    阿和
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%98%BF%E5%92%8C/">
+                        <span class="chip bg-color">阿和</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
