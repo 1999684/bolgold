@@ -3,11 +3,11 @@
   <title>ZTGD的小窝</title>
   
   <subtitle>WEL ZTGD</subtitle>
-  <link href="http://ztgdblog.icu/atom.xml" rel="self"/>
+  <link href="https://ztgdblog.icu/atom.xml" rel="self"/>
   
-  <link href="http://ztgdblog.icu/"/>
-  <updated>2024-11-08T10:50:54.511Z</updated>
-  <id>http://ztgdblog.icu/</id>
+  <link href="https://ztgdblog.icu/"/>
+  <updated>2024-11-11T06:10:09.124Z</updated>
+  <id>https://ztgdblog.icu/</id>
   
   <author>
     <name>ZTGD</name>
@@ -17,9 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>follow vaerify</title>
+    <link href="https://ztgdblog.icu/2024/11/11/follow-vaerify/"/>
+    <id>https://ztgdblog.icu/2024/11/11/follow-vaerify/</id>
+    <published>2024-11-11T06:09:52.000Z</published>
+    <updated>2024-11-11T06:10:09.124Z</updated>
+    
+    <content type="html"><![CDATA[<p>This message is used to verify that this feed (feedId:78679685603132416) belongs to me (userId:75912199914773504). Join me in enjoying the next generation information browser <a href="https://follow.is/">https://follow.is</a>.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;This message is used to verify that this feed (feedId:78679685603132416) belongs to me (userId:75912199914773504). Join me in enjoying th</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Git 常用命令汇总</title>
-    <link href="http://ztgdblog.icu/2024/11/08/07-git/"/>
-    <id>http://ztgdblog.icu/2024/11/08/07-git/</id>
+    <link href="https://ztgdblog.icu/2024/11/08/07-git/"/>
+    <id>https://ztgdblog.icu/2024/11/08/07-git/</id>
     <published>2024-11-08T10:47:27.000Z</published>
     <updated>2024-11-08T10:50:54.511Z</updated>
     
@@ -40,8 +60,8 @@
   
   <entry>
     <title>阿和美图~ 第二期</title>
-    <link href="http://ztgdblog.icu/2024/11/06/%E9%98%BF%E5%92%8C%E7%BE%8E%E5%9B%BE2/"/>
-    <id>http://ztgdblog.icu/2024/11/06/%E9%98%BF%E5%92%8C%E7%BE%8E%E5%9B%BE2/</id>
+    <link href="https://ztgdblog.icu/2024/11/06/%E9%98%BF%E5%92%8C%E7%BE%8E%E5%9B%BE2/"/>
+    <id>https://ztgdblog.icu/2024/11/06/%E9%98%BF%E5%92%8C%E7%BE%8E%E5%9B%BE2/</id>
     <published>2024-11-06T06:18:24.000Z</published>
     <updated>2024-11-06T06:21:06.460Z</updated>
     
@@ -55,17 +75,17 @@
     
     
     
-    <category term="阿和" scheme="http://ztgdblog.icu/categories/%E9%98%BF%E5%92%8C/"/>
+    <category term="阿和" scheme="https://ztgdblog.icu/categories/%E9%98%BF%E5%92%8C/"/>
     
     
-    <category term="阿和" scheme="http://ztgdblog.icu/tags/%E9%98%BF%E5%92%8C/"/>
+    <category term="阿和" scheme="https://ztgdblog.icu/tags/%E9%98%BF%E5%92%8C/"/>
     
   </entry>
   
   <entry>
     <title>阿和美图~ 第一期</title>
-    <link href="http://ztgdblog.icu/2024/11/05/%E9%98%BF%E5%92%8C%E7%BE%8E%E5%9B%BE1/"/>
-    <id>http://ztgdblog.icu/2024/11/05/%E9%98%BF%E5%92%8C%E7%BE%8E%E5%9B%BE1/</id>
+    <link href="https://ztgdblog.icu/2024/11/05/%E9%98%BF%E5%92%8C%E7%BE%8E%E5%9B%BE1/"/>
+    <id>https://ztgdblog.icu/2024/11/05/%E9%98%BF%E5%92%8C%E7%BE%8E%E5%9B%BE1/</id>
     <published>2024-11-05T14:45:33.000Z</published>
     <updated>2024-11-08T17:43:14.046Z</updated>
     
@@ -79,17 +99,17 @@
     
     
     
-    <category term="阿和" scheme="http://ztgdblog.icu/categories/%E9%98%BF%E5%92%8C/"/>
+    <category term="阿和" scheme="https://ztgdblog.icu/categories/%E9%98%BF%E5%92%8C/"/>
     
     
-    <category term="阿和" scheme="http://ztgdblog.icu/tags/%E9%98%BF%E5%92%8C/"/>
+    <category term="阿和" scheme="https://ztgdblog.icu/tags/%E9%98%BF%E5%92%8C/"/>
     
   </entry>
   
   <entry>
     <title>阿里云部署halo</title>
-    <link href="http://ztgdblog.icu/2024/11/05/06-%E9%98%BF%E9%87%8C%E4%BA%91%E9%83%A8%E7%BD%B2halo/"/>
-    <id>http://ztgdblog.icu/2024/11/05/06-%E9%98%BF%E9%87%8C%E4%BA%91%E9%83%A8%E7%BD%B2halo/</id>
+    <link href="https://ztgdblog.icu/2024/11/05/06-%E9%98%BF%E9%87%8C%E4%BA%91%E9%83%A8%E7%BD%B2halo/"/>
+    <id>https://ztgdblog.icu/2024/11/05/06-%E9%98%BF%E9%87%8C%E4%BA%91%E9%83%A8%E7%BD%B2halo/</id>
     <published>2024-11-05T05:31:10.000Z</published>
     <updated>2024-11-06T17:21:28.175Z</updated>
     
@@ -104,19 +124,19 @@
     
     
     
-    <category term="博客" scheme="http://ztgdblog.icu/categories/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="https://ztgdblog.icu/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="阿里云" scheme="http://ztgdblog.icu/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    <category term="阿里云" scheme="https://ztgdblog.icu/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
     
-    <category term="halo" scheme="http://ztgdblog.icu/tags/halo/"/>
+    <category term="halo" scheme="https://ztgdblog.icu/tags/halo/"/>
     
   </entry>
   
   <entry>
     <title>nrm&amp;nvm</title>
-    <link href="http://ztgdblog.icu/2024/07/11/05-nrm-nvm/"/>
-    <id>http://ztgdblog.icu/2024/07/11/05-nrm-nvm/</id>
+    <link href="https://ztgdblog.icu/2024/07/11/05-nrm-nvm/"/>
+    <id>https://ztgdblog.icu/2024/07/11/05-nrm-nvm/</id>
     <published>2024-07-11T07:27:14.000Z</published>
     <updated>2024-07-11T07:42:45.780Z</updated>
     
@@ -130,19 +150,19 @@
     
     
     
-    <category term="工具" scheme="http://ztgdblog.icu/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://ztgdblog.icu/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="nvm" scheme="http://ztgdblog.icu/tags/nvm/"/>
+    <category term="nvm" scheme="https://ztgdblog.icu/tags/nvm/"/>
     
-    <category term="nrm" scheme="http://ztgdblog.icu/tags/nrm/"/>
+    <category term="nrm" scheme="https://ztgdblog.icu/tags/nrm/"/>
     
   </entry>
   
   <entry>
     <title>http状态码</title>
-    <link href="http://ztgdblog.icu/2024/06/20/04-http1/"/>
-    <id>http://ztgdblog.icu/2024/06/20/04-http1/</id>
+    <link href="https://ztgdblog.icu/2024/06/20/04-http1/"/>
+    <id>https://ztgdblog.icu/2024/06/20/04-http1/</id>
     <published>2024-06-20T11:21:41.000Z</published>
     <updated>2024-06-21T12:43:04.675Z</updated>
     
@@ -156,19 +176,19 @@
     
     
     
-    <category term="前端" scheme="http://ztgdblog.icu/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://ztgdblog.icu/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="前端" scheme="http://ztgdblog.icu/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://ztgdblog.icu/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="http" scheme="http://ztgdblog.icu/tags/http/"/>
+    <category term="http" scheme="https://ztgdblog.icu/tags/http/"/>
     
   </entry>
   
   <entry>
     <title>hexo matery主题博客部分内容</title>
-    <link href="http://ztgdblog.icu/2024/06/20/03-hexo1/"/>
-    <id>http://ztgdblog.icu/2024/06/20/03-hexo1/</id>
+    <link href="https://ztgdblog.icu/2024/06/20/03-hexo1/"/>
+    <id>https://ztgdblog.icu/2024/06/20/03-hexo1/</id>
     <published>2024-06-19T22:30:00.000Z</published>
     <updated>2024-11-06T17:21:22.097Z</updated>
     
@@ -182,19 +202,19 @@
     
     
     
-    <category term="博客" scheme="http://ztgdblog.icu/categories/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="https://ztgdblog.icu/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="hexo" scheme="http://ztgdblog.icu/tags/hexo/"/>
+    <category term="hexo" scheme="https://ztgdblog.icu/tags/hexo/"/>
     
-    <category term="Matery主题" scheme="http://ztgdblog.icu/tags/Matery%E4%B8%BB%E9%A2%98/"/>
+    <category term="Matery主题" scheme="https://ztgdblog.icu/tags/Matery%E4%B8%BB%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>markdown实用技巧</title>
-    <link href="http://ztgdblog.icu/2024/06/20/02-markdown2/"/>
-    <id>http://ztgdblog.icu/2024/06/20/02-markdown2/</id>
+    <link href="https://ztgdblog.icu/2024/06/20/02-markdown2/"/>
+    <id>https://ztgdblog.icu/2024/06/20/02-markdown2/</id>
     <published>2024-06-19T22:17:55.000Z</published>
     <updated>2024-06-22T00:42:40.248Z</updated>
     
@@ -210,19 +230,19 @@
     
     
     
-    <category term="Markdown" scheme="http://ztgdblog.icu/categories/Markdown/"/>
+    <category term="Markdown" scheme="https://ztgdblog.icu/categories/Markdown/"/>
     
     
-    <category term="markdown" scheme="http://ztgdblog.icu/tags/markdown/"/>
+    <category term="markdown" scheme="https://ztgdblog.icu/tags/markdown/"/>
     
-    <category term="笔记" scheme="http://ztgdblog.icu/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://ztgdblog.icu/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>docker常用命令整理</title>
-    <link href="http://ztgdblog.icu/2024/06/18/01-docker(1)/"/>
-    <id>http://ztgdblog.icu/2024/06/18/01-docker(1)/</id>
+    <link href="https://ztgdblog.icu/2024/06/18/01-docker(1)/"/>
+    <id>https://ztgdblog.icu/2024/06/18/01-docker(1)/</id>
     <published>2024-06-18T15:36:04.000Z</published>
     <updated>2024-07-23T03:22:50.393Z</updated>
     
@@ -236,19 +256,19 @@
     
     
     
-    <category term="Docker" scheme="http://ztgdblog.icu/categories/Docker/"/>
+    <category term="Docker" scheme="https://ztgdblog.icu/categories/Docker/"/>
     
     
-    <category term="笔记" scheme="http://ztgdblog.icu/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://ztgdblog.icu/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="docker" scheme="http://ztgdblog.icu/tags/docker/"/>
+    <category term="docker" scheme="https://ztgdblog.icu/tags/docker/"/>
     
   </entry>
   
   <entry>
     <title>工具推荐-03 PotatoVN：Visual Novel管理软件</title>
-    <link href="http://ztgdblog.icu/2024/06/18/%E5%B7%A5%E5%85%B7-03-PotatoVN/"/>
-    <id>http://ztgdblog.icu/2024/06/18/%E5%B7%A5%E5%85%B7-03-PotatoVN/</id>
+    <link href="https://ztgdblog.icu/2024/06/18/%E5%B7%A5%E5%85%B7-03-PotatoVN/"/>
+    <id>https://ztgdblog.icu/2024/06/18/%E5%B7%A5%E5%85%B7-03-PotatoVN/</id>
     <published>2024-06-18T13:52:28.000Z</published>
     <updated>2024-11-06T17:20:40.562Z</updated>
     
@@ -263,21 +283,21 @@
     
     
     
-    <category term="工具" scheme="http://ztgdblog.icu/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://ztgdblog.icu/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="工具" scheme="http://ztgdblog.icu/tags/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://ztgdblog.icu/tags/%E5%B7%A5%E5%85%B7/"/>
     
-    <category term="游戏" scheme="http://ztgdblog.icu/tags/%E6%B8%B8%E6%88%8F/"/>
+    <category term="游戏" scheme="https://ztgdblog.icu/tags/%E6%B8%B8%E6%88%8F/"/>
     
-    <category term="资源整理" scheme="http://ztgdblog.icu/tags/%E8%B5%84%E6%BA%90%E6%95%B4%E7%90%86/"/>
+    <category term="资源整理" scheme="https://ztgdblog.icu/tags/%E8%B5%84%E6%BA%90%E6%95%B4%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title>工具推荐-02 QuickLook：一款免费的轻量级快速预览工具</title>
-    <link href="http://ztgdblog.icu/2024/05/10/%E5%B7%A5%E5%85%B7-02-QuickLook/"/>
-    <id>http://ztgdblog.icu/2024/05/10/%E5%B7%A5%E5%85%B7-02-QuickLook/</id>
+    <link href="https://ztgdblog.icu/2024/05/10/%E5%B7%A5%E5%85%B7-02-QuickLook/"/>
+    <id>https://ztgdblog.icu/2024/05/10/%E5%B7%A5%E5%85%B7-02-QuickLook/</id>
     <published>2024-05-10T11:58:23.000Z</published>
     <updated>2024-11-05T14:40:20.932Z</updated>
     
@@ -292,17 +312,17 @@
     
     
     
-    <category term="工具" scheme="http://ztgdblog.icu/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://ztgdblog.icu/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="工具" scheme="http://ztgdblog.icu/tags/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://ztgdblog.icu/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>工具推荐-01 Trilium:个人知识库的超高自由度编辑</title>
-    <link href="http://ztgdblog.icu/2024/05/08/%E5%B7%A5%E5%85%B7-01-trilium/"/>
-    <id>http://ztgdblog.icu/2024/05/08/%E5%B7%A5%E5%85%B7-01-trilium/</id>
+    <link href="https://ztgdblog.icu/2024/05/08/%E5%B7%A5%E5%85%B7-01-trilium/"/>
+    <id>https://ztgdblog.icu/2024/05/08/%E5%B7%A5%E5%85%B7-01-trilium/</id>
     <published>2024-05-08T15:07:55.000Z</published>
     <updated>2024-11-05T15:10:51.231Z</updated>
     
@@ -316,17 +336,17 @@
     
     
     
-    <category term="工具" scheme="http://ztgdblog.icu/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://ztgdblog.icu/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="工具" scheme="http://ztgdblog.icu/tags/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://ztgdblog.icu/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>markdown常用</title>
-    <link href="http://ztgdblog.icu/2024/05/08/00-markdown/"/>
-    <id>http://ztgdblog.icu/2024/05/08/00-markdown/</id>
+    <link href="https://ztgdblog.icu/2024/05/08/00-markdown/"/>
+    <id>https://ztgdblog.icu/2024/05/08/00-markdown/</id>
     <published>2024-05-07T16:09:15.000Z</published>
     <updated>2024-06-19T22:26:28.945Z</updated>
     
@@ -341,14 +361,14 @@
     
     
     
-    <category term="Markdown" scheme="http://ztgdblog.icu/categories/Markdown/"/>
+    <category term="Markdown" scheme="https://ztgdblog.icu/categories/Markdown/"/>
     
     
-    <category term="markdown" scheme="http://ztgdblog.icu/tags/markdown/"/>
+    <category term="markdown" scheme="https://ztgdblog.icu/tags/markdown/"/>
     
-    <category term="技术" scheme="http://ztgdblog.icu/tags/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://ztgdblog.icu/tags/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="笔记" scheme="http://ztgdblog.icu/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://ztgdblog.icu/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
