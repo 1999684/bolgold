@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="分类: 前端, ZTGD的小窝">
+    <meta name="keywords" content="标签: RSS阅读器, ZTGD的小窝">
     <meta name="description" content="I know what I want to do, and it makes sense to get going.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>分类: 前端 | ZTGD的小窝</title>
+    <title>标签: RSS阅读器 | ZTGD的小窝</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -506,14 +506,7 @@
 
 </header>
 
-    <style type="text/css">
-    /* don't remove. */
-    .about-cover {
-        height: 75vh;
-    }
-</style>
-
-<div class="bg-cover pd-header about-cover">
+    <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
@@ -562,201 +555,235 @@
 
 <main class="content">
 
-    <style>
-    .chip-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        padding: 20px;
-    }
+    
 
-    .card {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .tag-title {
-        font-size: 1.5em;
-        color: #333;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .tag-chips {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-    }
-
-    .chip {
-        padding: 10px 15px;
-        border-radius: 20px;
-        color: #fff;
-        font-weight: bold;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 100px;
-    }
-
-    .chip-default {
-        background-color: #3498db; /* 默认状态颜色 */
-    }
-
-    .chip-active {
-        background-color: #27ae60; /* 激活状态颜色 */
-    }
-
-    .tag-length {
-        margin-left: 5px;
-        font-size: 0.8em;
-    }
-
-    .chip a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-</style>
-
-
-
-<div id="category-cloud" class="container chip-container">
+<div id="tags" class="container chip-container">
     <div class="card">
         <div class="card-content">
             <div class="tag-title center-align">
-                <i class="fas fa-bookmark"></i>&nbsp;&nbsp;文章分类
+                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
             </div>
             <div class="tag-chips">
                 
                 
-                
-                <a href="/categories/Docker/" title="Docker: 1">
+                <a href="/tags/docker/" title="docker: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F9EBEA;">Docker
+                            data-tagname="docker" style="background-color: #F9EBEA;">docker
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E5%8D%9A%E5%AE%A2/" title="博客: 2">
+                <a href="/tags/hexo/" title="hexo: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">博客
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/Markdown/" title="Markdown: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #D5F5E3;">Markdown
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/%E5%89%8D%E7%AB%AF/" title="前端: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            style="background-color: #E8F8F5;">前端
+                            data-tagname="hexo" style="background-color: #F5EEF8;">hexo
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E5%B7%A5%E5%85%B7/" title="工具: 6">
+                <a href="/tags/Matery%E4%B8%BB%E9%A2%98/" title="Matery主题: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #FEF9E7;">工具
-                        <span class="tag-length">6</span>
+                            data-tagname="Matery主题" style="background-color: #D5F5E3;">Matery主题
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E5%A5%A5%E7%89%B9%E6%9B%BC/" title="奥特曼: 9">
+                <a href="/tags/markdown/" title="markdown: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F8F9F9;">奥特曼
+                            data-tagname="markdown" style="background-color: #E8F8F5;">markdown
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E6%8A%80%E6%9C%AF/" title="技术: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="技术" style="background-color: #FEF9E7;">技术
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%89%8D%E7%AB%AF/" title="前端: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="前端" style="background-color: #F8F9F9;">前端
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/http/" title="http: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="http" style="background-color: #82E0AA;">http
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91/" title="阿里云: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="阿里云" style="background-color: #D7BDE2;">阿里云
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/halo/" title="halo: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="halo" style="background-color: #A3E4D7;">halo
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/nvm/" title="nvm: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="nvm" style="background-color: #85C1E9;">nvm
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/nrm/" title="nrm: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="nrm" style="background-color: #F8C471;">nrm
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%A5%A5%E7%89%B9%E6%9B%BC/" title="奥特曼: 9">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="奥特曼" style="background-color: #F9E79F;">奥特曼
                         <span class="tag-length">9</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E9%98%BF%E5%92%8C/" title="阿和: 2">
+                <a href="/tags/git/" title="git: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #82E0AA;">阿和
-                        <span class="tag-length">2</span>
+                            data-tagname="git" style="background-color: #F8F9F9;">git
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
+                
+                <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93/" title="个人知识库: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="个人知识库" style="background-color: #A3E4D7;">个人知识库
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E6%B8%B8%E6%88%8F/" title="游戏: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="游戏" style="background-color: #FEF9E7;">游戏
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E8%B5%84%E6%BA%90%E6%95%B4%E7%90%86/" title="资源整理: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="资源整理" style="background-color: #D7BDE2;">资源整理
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%BF%AB%E9%80%9F%E6%B5%8F%E8%A7%88/" title="快速浏览: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="快速浏览" style="background-color: #A3E4D7;">快速浏览
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%B7%A5%E5%85%B7/" title="工具: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="工具" style="background-color: #E8F8F5;">工具
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/RSS%E9%98%85%E8%AF%BB%E5%99%A8/" title="RSS阅读器: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="RSS阅读器" style="background-color: #85C1E9;">RSS阅读器
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E9%98%BF%E5%92%8C/" title="阿和: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="阿和" style="background-color: #F8F9F9;">阿和
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
                 
             </div>
         </div>
     </div>
 </div>
 
-
     
 
     <article id="articles" class="container articles">
         <div class="row tags-posts">
             
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="工具, RSS阅读器" data-aos="fade-up">
                 <div class="card">
-                    <a href="/2024/06/20/04-http1/">
+                    <a href="/2024/11/14/%E5%B7%A5%E5%85%B7-04-Follow/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="http状态码">
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="工具-04-Follow">
                             
-                            <span class="card-title">http状态码</span>
+                            <span class="card-title">工具-04-Follow</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                HTTP 状态码HTTP 状态码（英语：HTTP Status Code）是用以表示网页服务器 超文本传输协议 响应状态的 3 位数字代码。它由 RFC 2616 规范定义的，并得到 RFC 2518、RFC 2817、RFC 2295、R
-                            
-                        </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-11-14
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    前端
+                                <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
+                                工具
                                 </a>
                                 
                                 
                             </span>
                         </div>
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%89%8D%E7%AB%AF/">
-                            <span class="chip bg-color">前端</span>
-                        </a>
-                        
-                        <a href="/tags/http/">
-                            <span class="chip bg-color">http</span>
-                        </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
             
