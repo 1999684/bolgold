@@ -6,7 +6,7 @@
   <link href="https://ztgdblog.icu/atom.xml" rel="self"/>
   
   <link href="https://ztgdblog.icu/"/>
-  <updated>2024-11-14T07:10:06.980Z</updated>
+  <updated>2024-11-14T07:12:42.187Z</updated>
   <id>https://ztgdblog.icu/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ztgdblog.icu/2024/11/14/%E5%B7%A5%E5%85%B7-04-Follow/"/>
     <id>https://ztgdblog.icu/2024/11/14/%E5%B7%A5%E5%85%B7-04-Follow/</id>
     <published>2024-11-14T06:37:24.000Z</published>
-    <updated>2024-11-14T07:10:06.980Z</updated>
+    <updated>2024-11-14T07:12:42.187Z</updated>
     
     <content type="html"><![CDATA[<p>体验了两周的Follow后，来谈谈使用感受吧。</p><h2 id="为什么用Follow"><a href="#为什么用Follow" class="headerlink" title="为什么用Follow"></a>为什么用Follow</h2><blockquote><p>Follow 是与 RSSHub、RSS3 相结合的生态软件，从而扩展了很多的订阅源以供订阅。</p></blockquote><p>我接触RSS还是在今年开始搞博客才了解到的，了解后就喜欢上了这种信息源聚合的阅读方式。于是便开始找寻各种方便的RSS阅读器。两周前接触到这个软件后，才感觉到真正好用，就这个吧。</p><p>拿我个人举例。微信公众号和 B 站上关注了一些优秀创作者，独立博客关注了 也不少而且还会不断增长，他们的文章或视频都很有价值，希望在更新时能尽快得知，并方便集中收藏以供统一整理。</p><p>使用RSS可以很有效的帮助我定时的阅览这些途径的新的信息</p><p>而Follow的定位更是官网中所描述的 “下一代的信息浏览器”，目前它提供的功能有：</p><ul><li><strong>Articles</strong> 文章订阅：偏向于传统的 RSS 订阅的模式；</li><li><strong>Social Media</strong> 社交媒体：更加偏向于 Follow 自己感兴趣的作者在提供订阅的 APP 上；</li><li><strong>Pictures</strong> 图库订阅：订阅自己感兴趣的图片网站；</li><li><strong>Videos</strong> 视频订阅：订阅自己的在 Youtube、BiliBili 等视频平台的 UP 主；</li><li><strong>Audio</strong> 音频订阅：更像是播客类的订阅 APP；</li><li><strong>Notifications</strong> 通知订阅：订阅新闻媒体的信息；</li></ul><p>（bilibili的使用有些问题，视频不一定可以播放，有些遗憾）</p><blockquote><p>详见官网地址：<a href="https://follow.is/">https://follow.is/</a> </p><p>Github 地址：<a href="https://github.com/RSSNext/follow">https://github.com/RSSNext/follow</a></p></blockquote><h2 id="几个功能"><a href="#几个功能" class="headerlink" title="几个功能"></a>几个功能</h2><blockquote><p>除去和大多数RSS阅读器相类似的功能外，Follow另外添加的几个功能让我眼前一亮</p></blockquote><h3 id="AI-Summary"><a href="#AI-Summary" class="headerlink" title="AI Summary"></a>AI Summary</h3><p><img src="https://1999684.github.io/picx-images-hosting/artical/follow/1731566577514.2dopy5f6eq.webp"></p><p>通过自动化设置，可以将文章使用 AI 生成摘要，一些复杂难懂且文章比较长的场景，通过 AI 进行总结，可以带来阅读效率的极大提升。此外，即使是订阅follow的博主的文章，也很难每篇都感兴趣，通过ai摘要，也可以筛选阅读。</p><h3 id="订阅共享"><a href="#订阅共享" class="headerlink" title="订阅共享"></a>订阅共享</h3><p>订阅共享功能是 Follow 的特色功能，大家可以通过订阅的文章了解到和自己一样订阅这个文章的人他（她）们订阅了什么信息，从而充实自己的订阅源。，在每篇文章的上角，可以看到同样追踪了这篇的用户，并通过他们看到其他你或许没有接触和了解的博主。</p><p><img src="https://1999684.github.io/picx-images-hosting/artical/follow/1731567670788.esj7tx27y.webp"></p><h3 id="图片展示"><a href="#图片展示" class="headerlink" title="图片展示"></a>图片展示</h3><p>我个人是个相对比较喜欢看P站的<code>pixiv</code>，关注的画师也不少，个别一些画师的更新，pixiv本身也没什么好的推送机制，依靠这个也可以很方便和美观的阅览。（个人测试下，一些社交媒体的图片也可以展示）</p><p><img src="https://1999684.github.io/picx-images-hosting/artical/follow/1731565955107.4uayd2cd5w.webp"></p><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>此外，喜欢听博客，浏览微博，推特等社媒的用户，也可以看看这些，简洁美观的浏览真的很棒。</p><p><img src="https://1999684.github.io/picx-images-hosting/artical/follow/1731565866885.3nrn4gngk9.webp"></p><p><img src="https://1999684.github.io/picx-images-hosting/artical/follow/1731566049045.7w6ueadpd3.webp"></p><h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><p>搜索上，提供了很多不同的渠道。</p><p><img src="https://1999684.github.io/picx-images-hosting/artical/follow/1731566086086.esj7szyxi.webp"></p><h3 id="总的来说"><a href="#总的来说" class="headerlink" title="总的来说"></a>总的来说</h3><p>Follow 是一款非常成功的软件，在算法推荐为主流的时代，这一款 RSS 软件无疑给 RSS 圈带来了新的希望与活力，目前还在邀请阶段，凭借开源、简洁、RSS3 就已经让我十分满意了。</p><p>如果有推荐的 RSS 的订阅源也可以通过评论区分享出来</p>]]></content>
     
