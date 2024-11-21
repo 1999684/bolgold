@@ -4,22 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Git 常用命令汇总, ZTGD的小窝">
-    <meta name="description" content="常规操作
-
-git push origin test 推送本地分支到远程仓库
-
-
-
-git rm -r --cached 文件&amp;#x2F;文件夹名字 取消文件被版本控制
-
-
-
-git reflog 获取执行过的命令
-
-
-
-git log -">
+    <meta name="keywords" content="马勒卡尔典狱长日志, ZTGD的小窝">
+    <meta name="description" content="写在前面
+内容名为《马勒卡尔典狱长日志》
+本文出自加贺美雅之的《监狱岛》内容，权当看了消遣，文中内容与小说中案件有关，转载这边，也欢迎大家去阅读原作。
+我看的是民间翻译后，由Shen1122制作的epub文件，也希望可以早日读到简中版本的小">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -31,7 +20,7 @@ git log -">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Git 常用命令汇总 | ZTGD的小窝</title>
+    <title>马勒卡尔典狱长日志 | ZTGD的小窝</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -562,12 +551,12 @@ git log -">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://1999684.github.io/picx-images-hosting/封面/image.8ad9wu18el.webp')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://1999684.github.io/picx-images-hosting/book/1.8dwwd3i9y3.webp')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Git 常用命令汇总</h1>
+                    <h1 class="description center-align post-title">马勒卡尔典狱长日志</h1>
                 </div>
             </div>
         </div>
@@ -591,8 +580,8 @@ git log -">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/git/">
-                                <span class="chip bg-color">git</span>
+                            <a href="/tags/%E8%BD%AC%E8%BD%BD/">
+                                <span class="chip bg-color">转载</span>
                             </a>
                         
                     </div>
@@ -603,8 +592,8 @@ git log -">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
-                                工具
+                            <a href="/categories/%E8%BD%AC%E8%BD%BD/" class="post-category">
+                                转载
                             </a>
                         
                     </div>
@@ -616,28 +605,28 @@ git log -">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-11-08
+                    2024-11-22
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-11-12
+                    2024-11-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    790
+                    6.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    21 分
                 </div>
                 
 
@@ -657,226 +646,234 @@ git log -">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="常规操作"><a href="#常规操作" class="headerlink" title="常规操作"></a>常规操作</h2><ul>
-<li><ul>
-<li><code>git push origin test</code> 推送本地分支到远程仓库</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git rm -r --cached</code> 文件&#x2F;文件夹名字 取消文件被版本控制</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git reflog</code> 获取执行过的命令</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git log --graph</code> 查看分支合并图</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git merge --no-ff -m &#39;合并描述&#39;</code> 分支名 不使用<code>Fast forward</code>方式合并，采用这种方式合并可以看到合并记录</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git check-ignore -v 文件名</code> 查看忽略规则</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git add -f 文件名</code> 强制将文件提交</li>
-</ul>
-</li>
-</ul>
-<h3 id="Git-创建项目仓库"><a href="#Git-创建项目仓库" class="headerlink" title="Git 创建项目仓库"></a>Git 创建项目仓库</h3><ul>
-<li><ul>
-<li><code>git init</code> 初始化</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git remote add origin url</code> 关联远程仓库</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git pull</code></li>
-</ul>
-</li>
-<li><ul>
-<li><code>git fetch</code> 获取远程仓库中所有的分支到本地</li>
-</ul>
-</li>
-</ul>
-<h3 id="忽略已加入到版本库中的文件"><a href="#忽略已加入到版本库中的文件" class="headerlink" title="忽略已加入到版本库中的文件"></a>忽略已加入到版本库中的文件</h3><ul>
-<li><ul>
-<li><code>git update-index --assume-unchanged file</code> 忽略单个文件</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git rm -r --cached 文件/文件夹名字</code> (. 忽略全部文件)</li>
-</ul>
-</li>
-</ul>
-<h3 id="取消忽略文件"><a href="#取消忽略文件" class="headerlink" title="取消忽略文件"></a>取消忽略文件</h3><p><code>git update-index --no-assume-unchanged file</code></p>
-<h3 id="拉取、上传免密码"><a href="#拉取、上传免密码" class="headerlink" title="拉取、上传免密码"></a>拉取、上传免密码</h3><p><code>git config --global credential.helper store</code></p>
-<h2 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h2><ul>
-<li><ul>
-<li><code>git branch</code> 创建分支</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git branch -b</code> 创建并切换到新建的分支上</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git checkout</code> 切换分支</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git branch</code> 查看分支列表</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git branch -v</code> 查看所有分支的最后一次操作</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git branch -vv</code> 查看当前分支</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git branch -b 分支名 origin/分支名</code> 创建远程分支到本地</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git branch --merged</code> 查看别的分支和当前分支合并过的分支</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git branch --no-merged</code> 查看未与当前分支合并的分支</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git branch -d 分支名</code> 删除本地分支</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git branch -D 分支名</code> 强行删除分支</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git push origin --delete 分支名</code> 删除远程仓库分支</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git merge 分支名</code> 合并分支到当前分支上</li>
-</ul>
-</li>
-</ul>
-<h2 id="暂存操作"><a href="#暂存操作" class="headerlink" title="暂存操作"></a>暂存操作</h2><ul>
-<li><ul>
-<li><code>git stash</code> 暂存当前修改</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git stash apply</code> 恢复最近的一次暂存</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git stash pop</code> 恢复暂存并删除暂存记录</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git stash list</code> 查看暂存列表</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git stash drop 暂存名</code>(例：stash@{0}) 移除某次暂存</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git stash clear</code> 清除暂存</li>
-</ul>
-</li>
-</ul>
-<h2 id="回退操作"><a href="#回退操作" class="headerlink" title="回退操作"></a>回退操作</h2><ul>
-<li><ul>
-<li><code>git reset --hard HEAD^</code> 回退到上一个版本</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git reset --hard commitId</code> 回退到某个版本</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git checkout -- file</code>撤销修改的文件(如果文件加入到了暂存区，则回退到暂存区的，如果文件加入到了版本库，则还原至加入版本库之后的状态)</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git reset HEAD file</code> 撤回暂存区的文件修改到工作区</li>
-</ul>
-</li>
-</ul>
-<h2 id="标签操作"><a href="#标签操作" class="headerlink" title="标签操作"></a>标签操作</h2><ul>
-<li><ul>
-<li><code>git tag 标签名</code> 添加标签(默认对当前版本)</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git tag 标签名 commitId</code> 对某一提交记录打标签</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git tag -a 标签名 -m &#39;描述&#39;</code> 创建新标签并增加备注</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git tag</code> 列出所有标签列表</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git show 标签名</code> 查看标签信息</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git tag -d 标签名</code> 删除本地标签</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git push origin 标签名</code> 推送标签到远程仓库</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git push origin --tags</code> 推送所有标签到远程仓库</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git push origin :refs/tags/标签名</code> 从远程仓库中删除标签</li>
-</ul>
-</li>
-</ul>
-<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><ul>
-<li><ul>
-<li><code>git remote -v</code>查看远程仓库地址</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git remote show origin</code>查看远程仓库详情信息</li>
-</ul>
-</li>
-</ul>
-<h2 id="查看某个-commit-提交属于哪个分支"><a href="#查看某个-commit-提交属于哪个分支" class="headerlink" title="查看某个 commit 提交属于哪个分支"></a>查看某个 commit 提交属于哪个分支</h2><ul>
-<li><ul>
-<li><code>git branch -l --contains &lt;commit_id&gt;</code> 本地分支</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git branch -r --contains &lt;commit_id&gt;</code> 远程分支</li>
-</ul>
-</li>
-<li><ul>
-<li><code>git branch --all --contains &lt;commit_id&gt;</code> 所有分支</li>
-</ul>
-</li>
-</ul>
+                <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><blockquote>
+<p>内容名为《马勒卡尔典狱长日志》</p>
+<p>本文出自加贺美雅之的《监狱岛》内容，权当看了消遣，文中内容与小说中案件有关，转载这边，也欢迎大家去阅读原作。</p>
+<p>我看的是民间翻译后，由Shen1122制作的epub文件，也希望可以早日读到简中版本的小说原著。（去年【2023】《<a target="_blank" rel="noopener" href="https://book.douban.com/subject/36446877/">双月城的惨剧</a>》出了简中版本，个人十分喜欢，有机会想关于这本写个小文。推荐大家去读）</p>
+</blockquote>
+<h2 id="正文内容"><a href="#正文内容" class="headerlink" title="正文内容"></a>正文内容</h2><h3 id="1676年11月22日"><a href="#1676年11月22日" class="headerlink" title="1676年11月22日"></a>1676年11月22日</h3><blockquote>
+<p>今夏建于监狱深处的大理石偏馆昨日竣工。连日加班令工人叫苦不迭，所幸款项结足，工程如期完成。一入十二月便能修好内部，恭迎自凡尔赛而来的贵妇。</p>
+<p>午后监督深井挖掘。直径三米，深十五米之井坑，应与深壕相同。本为弃置囚犯尸体，削减安葬开支所建，作为军用工事，亦极具防御功能。</p>
+<p>据副官反映，囚犯之中怨声四起。盖因牢中大量田鼠出没，不仅糟蹋粮食，还咬毁看守的鞋带腰带。卫生方面需要改善，择日号召全体看守进行驱鼠工作。如果白石偏馆中满是田鼠，我这典狱长恐怕也做不长久了。</p>
+<p>今夜开始书写全新的叙事诗，自觉是一篇杰作。</p>
+</blockquote>
+<h3 id="1676年12月2日"><a href="#1676年12月2日" class="headerlink" title="1676年12月2日"></a>1676年12月2日</h3><blockquote>
+<p>午后，从马赛港接来奥莱丽·拉瓦利埃尔夫人。因为是上流阶级的贵妇人，原以为有数名随身侍从，结果仅带着一名女仆，朴素低调，令人大跌眼镜。</p>
+<p>特书一笔的是，她的外貌完全隐于帽上垂下的黑面纱中，不见真容。</p>
+<p>据巴黎传来消息，该妇人曾集皇帝陛下万千宠爱于一身，但现因恶疾遍身容颜不再，所以用黑纱遮面。夫人身份尊贵，我对此面露厌恶并非良策，可情难堪忍。唉，触霉头的差事。</p>
+<p>领夫人进入刚完成的偏馆。两人对此偏馆颇为满意，取名奥阑遮馆<code>（也就是死亡馆）</code>。</p>
+</blockquote>
+<h3 id="1677年2月7日"><a href="#1677年2月7日" class="headerlink" title="1677年2月7日"></a>1677年2月7日</h3><blockquote>
+<p>有关拉瓦利埃尔夫人深居奥阑遮馆的日常我一概不知，一日三餐皆由女仆奥坦丝来监狱厨房领取，沐浴等夫人的周身俗事也由其女仆照料。</p>
+<p>今日因故前往狱舍深处，奥馆周遭。见卧室窗户敞开，夫人静立窗口。见我出现，夫人立即转身隐入室内。然而在那一瞬间，我看见她左半面颊密密麻麻生满红铜色的疱疮。</p>
+<p>不久，女仆奥坦丝于玄关现身，铁青着脸责难道：“这里是高贵夫人的住处，哪怕是典狱长也不可无故接近。”卑贱女仆的抗议本是僭越，然而我才因那世间罕有之恐怖相貌惊魂甫定，也没了呵斥女仆的心情，快步离开现场。</p>
+<p>那确定是某种疾病吗？若真是恶疾，我作为典狱长为此做好对策。可接到命令的时候，仅说拉瓦利埃尔夫人来自凡尔赛岛，一路需以最高礼遇相待，却无一人告知其身染重疾。这问题非常棘手——</p>
+</blockquote>
+<h3 id="1677年10月15日"><a href="#1677年10月15日" class="headerlink" title="1677年10月15日"></a>1677年10月15日</h3><blockquote>
+<p>看守之中忽然出现怪异传言：深夜，穿着薄衣，脸上戴着怪异面具的女人出没于奥馆周围。那女人出现在巡视到此的看守面前，做出世间难料的媚态，引诱看守进入奥馆，在不辨东西的黑暗中交嫌，而这女人正是拉瓦利埃尔夫人。</p>
+<p>或是出于好奇，或是出于好色，看守中总有怀有猎艳之心的人于深夜在奥馆周围徘徊。我听到这些只能不住地哀叹。</p>
+<p>愚蠢的谣言是祸乱风气的元凶。我将全体看守一同召集，告诚众人需专于本职，切莫听信谣言。</p>
+<p>然而我内心仍有一丝不安：倘若传言为真，那该怎么办？</p>
+</blockquote>
+<h3 id="1677年12月21日"><a href="#1677年12月21日" class="headerlink" title="1677年12月21日"></a>1677年12月21日</h3><blockquote>
+<p>乔多·阿尔梅吉看守前日因浑身不适突然晕倒，现在又发高烧以至性命垂危。待狱医脱下他的衣服检查时，确认其从脖颈到腹部，直至阴部皆覆盖着红铜色的疤疮。</p>
+<p>接到狱医的联络，我立刻赶到病床边。阿尔梅吉已然神志不清，开始胡言乱语了。面对为何会染疾的咄咄逼问，在他的胡言乱语之中听得他曾与出没在奥馆附近的假面女人数度欢好。</p>
+<p>我对此除了吃惊又能干什么呢？恐怕我担心的事已经降临，之后我命令狱医严守此事，自己却为事态该如何收场而发愁至深夜。</p>
+</blockquote>
+<h3 id="1677年12月23日"><a href="#1677年12月23日" class="headerlink" title="1677年12月23日"></a>1677年12月23日</h3><blockquote>
+<p>拂晓，看守阿尔梅吉在昏迷之中去世了。与狱医商谈后，本日将遗体葬于后山墓地。</p>
+</blockquote>
+<h3 id="1678年2月15日"><a href="#1678年2月15日" class="headerlink" title="1678年2月15日"></a>1678年2月15日</h3><blockquote>
+<p>杰拉德·萨弗拉克看守昏厥在岗位上，症状与阿尔梅吉相同。面对狱医的惊异和我的责问下，萨弗拉克承认他和阿尔梅吉一样，与出没在奥馆周围的假面女人曾有过交合。</p>
+<p>这假面女人究竟是何人？又为何要做出这种事来？</p>
+</blockquote>
+<h3 id="1678年2月17日"><a href="#1678年2月17日" class="headerlink" title="1678年2月17日"></a>1678年2月17日</h3><blockquote>
+<p>晨光未明，看守萨弗拉克身亡，葬后山。</p>
+</blockquote>
+<p>之后，类似的记录还在重复。假面女人每晚都出现在奥阑遮馆周围，用世间罕见的媚态诱惑来此巡逻的看守，并与之交媾。</p>
+<p>一次交合过后，看守们纷纷拜倒在假面女人的媚骨之下，于是之后每晚都守在女子出现的地点等待。在数次交合过后，看守的身体开始出现红铜色的疱疮，不久就会发高烧失去意识，到了这时候就已经回天乏术了。他们在延绵的高热中陷入胡言乱语，最后等待他们的只有“死”。</p>
+<p>马勒卡尔典狱长苦口婆心地警告看守们不要接近奥阑遮馆，也特意将夜间巡逻路线绕开奥馆，但假面女人竟大胆地向其他场所进发，诱惑单独巡逻的看守。</p>
+<p>听说这个假面女人的魅惑姿态有如迷药。只要这个身披透光薄衣的女子扭动着胴体出现在眼前时，看守便会感到一阵麻痹脑髓的酥快，顿时理性全无，唯唯诺诺地跟在女人身后。</p>
+<p>——牺牲者已有五人，马勒卡尔典狱长下定了一个决心。</p>
+<h3 id="1678年10月7日"><a href="#1678年10月7日" class="headerlink" title="1678年10月7日"></a>1678年10月7日</h3><blockquote>
+<p>以上部下之死历历在目，我着实不忍惨剧继续下去。看来我必须亲自出马，同假面女人对决。</p>
+<p>从今往后每以晚，都去奥馆巡逻一回，希望能寻找到事件的真相。</p>
+<p>愿上帝保佑——</p>
+</blockquote>
+<p>两日后的十月九日，马勒卡尔典狱长终于成功捉住了假面女人。</p>
+<p>然而随后他又陷人了新的懊恼和烦闷的深渊。</p>
+<h3 id="1678年10月9日"><a href="#1678年10月9日" class="headerlink" title="1678年10月9日"></a>1678年10月9日</h3><blockquote>
+<p>眼下，我处于束手无策的境地。</p>
+<p>受立场所迫，我应当如何平复内心？就算遍寻先人智慧，此事也毫无先列。唉，上天为什么要用这种苦难来磨练我——</p>
+<p>昨晚在奥馆左近巡逻，天还没亮，就遇到了假面女人。</p>
+<p>这女人从奥馆玄关出来，穿着透光薄衣，戴着水城威尼斯的假面，与传言相同。右手拿着一个像香炉的东西，施施款款地走到我身前。</p>
+<p>烟雾从香炉中飘出，弥漫四野。在烟气朦胧了月光后，我惊觉幻觉对我的强烈影响。周围树木扭动，大地徐徐抬升。而视野中心，尽态极妍、翩翩起舞的假面女人宛如伊斯兰诸国勾引男性的妖艳舞女。</p>
+<p>迷烟对我的影响越来越强，也知到迷烟是从女子手中的香炉中飘出来的。我屏息突进，狠心踢飞香炉。</p>
+<p>那女人慌了，我将她扑倒，指尖摘去她的面具。</p>
+<p>戴面具的人究竟是谁？我预料面具之下肯定是拉瓦利埃尔夫人，然而面具之下竟是一张白似月光，五官稚幼的少女面庞。</p>
+<p>未曾想每夜戴着假面、展现媚态、诱惑看守进入奥馆之人竟是拉瓦利埃尔夫人的女仆奥坦丝！</p>
+<p>我质问她为何要做这种事，奥坦丝掩面哭泣。据她所说，起因竟是拉瓦利埃尔夫人那世间难容的性癖。</p>
+<p>拉瓦利埃尔夫人姿容秀丽，艳绝凡尔赛。但即使她独占着太阳王路易十四的宠爱，也不能摆脱身怀恶疾的命运。脓肿毁容、痘疱频出，伴随着病情的加重，她整日郁郁寡欢，以至与口出谵言。国王陛下对此忧心忡忡，所以在圣·汤托万岛建了这座大理石馆。</p>
+<p>之后拉瓦利埃尔夫人同女仆奥坦丝来岛。或许是日光与海风的抚慰，夫人的身体有所好转，但她可怖的性癖也随之抬头。</p>
+<p>不同于夫人表面上的容颜端淑，她本质上非常多情。太阳王的独宠难以填满她的欲望，她暗自勾引警卫进入她的房间夜夜笙歌。如今，她的恶癖又死灰复燃。她物色的人选都是我手下的看守。为了享受鱼水之欢，夫人提出了这个破天荒的诡计。</p>
+<p>奥坦丝戴着假面现在看守面前，故作媚态将人诱入奥馆。二女再借着黑暗调换身份，由夫人与看守交合。</p>
+<p>那个勾人心魄的香炉是由夫人从凡尔赛带来的，是宫中的吉普赛占卜师所制。炉中燃烧的是阿拉伯后宫中的强效催情香。只要闻过一回，便可让男人马上失去理性，任由女性摆布。我险些沦为她新的牺牲品。</p>
+<p>然而夫人虽然脓疱毁容，但却不见死兆，欢好之后的看守却都在发病后没多久就死了，这实在是稀奇。或许是夫人对病毒的抗性大罢了。</p>
+<p>我为难的是今后该如何与夫人相处。任她胡来的话，之前看守们的惨剧又将重现。她虽是陛下的宠妃，也不能无视她的恶行。</p>
+<p>今天写了一封加急密函，送往巴黎，视回复再做定夺。我感觉令人战栗的决断正在逼近我的心头。</p>
+<p>上帝啊。请减轻我的苦恼吧——</p>
+</blockquote>
+<p>这个送往巴黎的密函，不用说就是请求国王路易十四，或其身边的人有关如何处理拉瓦利埃尔夫人的密信吧。</p>
+<p>问题是之后他的那个“令人战栗的决断”，不消说就是典狱长预想巴黎方面会对夫人做出的处理。那为何马勒卡尔典狱长会觉得恐怖呢？</p>
+<p>与拉瓦利埃尔夫人在凡尔赛宫的稀世美貌不同，如今的她已是残花败柳，脓疮遍身，路易十四也不可能再宠幸她了。随着梅毒病症的加重，她的精神也变得异常。陷入与看守的肉欲之中的夫人，最终沦落为一匹淫兽，那么——</p>
+<p>那么心高气傲的“太阳王”定会对过去的宠妃，如今沉沦自弃的拉瓦利埃尔夫人愤怒不已。围绕在皇帝身边，也必定会有人唯恐夫人之事传出丑闻，于是就进谏将夫人赶快处死。</p>
+<p>可如果路易十四为了守住威信，在巴黎凡尔赛宫对夫人下达灭口令，那么马勒卡尔典狱长自己被指定为此决定的执行者，概率就很大了。</p>
+<p>典狱长的焦躁和苦恼从文章的字里行间渗出来，堵在我的胸口。从那日起，他便在等待巴黎回信中度日如年。</p>
+<p>终于，回信来了。</p>
+<h3 id="1678年10月18日"><a href="#1678年10月18日" class="headerlink" title="1678年10月18日"></a>1678年10月18日</h3><blockquote>
+<p>本日，期盼已久的来自凡尔赛的回信终于到了。我手指轻颤，剥开火印，抽出羊皮信纸。</p>
+<p>—上帝啊。看完信后，我的绝望惊惧，怕是没人可以体会到。信函是陛下的心腹夏尔尼伯爵所写。据他所说，国王陛下哀痛欲绝，希望夫人的顽疾能早日康复。为了不增添陛下烦恼，所以有关夫人在监狱内所做的恶事一概未报。</p>
+<p>然而拉瓦利埃尔夫人的恶行日后恐怕会传出丑闻，动摇皇家的根基。为此只能做出决断，牺牲夫人虽然有愧于陛下，却有功于皇室。</p>
+<p>一切都已尘埃落定，拉瓦利埃尔夫人的命运也不是我等可以挽救的。</p>
+<p>请求上帝宽恕——</p>
+</blockquote>
+<p>事已至此，拉瓦利埃尔夫人的命运算是定下了。路易十四的心腹夏尼尔伯爵怕横生丑闻，瞒过执着于夫人的路易十四，擅自指示马勒卡尔典狱长杀害拉瓦利埃尔夫人。</p>
+<p>是由于自己的苦闷而无法落笔吗？之后典狱长只在日志中简短记录了监狱的日常运营事项，好像彻底忘了拉瓦利埃尔夫人这个人。</p>
+<h3 id="1678年11月7日"><a href="#1678年11月7日" class="headerlink" title="1678年11月7日"></a>1678年11月7日</h3><blockquote>
+<p>终日雨。</p>
+<p>上月的采煤量较前月减少了两成。是否需要增加劳役呢？</p>
+</blockquote>
+<h3 id="1678年11月15日"><a href="#1678年11月15日" class="headerlink" title="1678年11月15日"></a>1678年11月15日</h3><blockquote>
+<p>晴。</p>
+<p>数名石工来岛，修缮奥馆前的喷泉，预计将盘桓数日。</p>
+</blockquote>
+<h3 id="1678年12月3日"><a href="#1678年12月3日" class="headerlink" title="1678年12月3日"></a>1678年12月3日</h3><blockquote>
+<p>阴，浪高。</p>
+<p>鼠患加剧。厨房内的小麦、蔬菜被啃噬严重。我思索着驱鼠的好方法。</p>
+</blockquote>
+<p>——而当新的一年来临不久，一篇记录突然跳进我眼中。</p>
+<h3 id="1679年1月18日"><a href="#1679年1月18日" class="headerlink" title="1679年1月18日"></a>1679年1月18日</h3><blockquote>
+<p>昨夜雷雨。</p>
+<p>今天天还没亮，女仆奥坦丝发现拉瓦利埃尔夫人死于奥馆寝室。经狱医诊断是“上帝的召唤”。</p>
+<p>递书巴黎，静待指示。</p>
+</blockquote>
+<h3 id="1679年1月25日"><a href="#1679年1月25日" class="headerlink" title="1679年1月25日"></a>1679年1月25日</h3><blockquote>
+<p>终日雨。</p>
+<p>本日，负责接回夫人遗体的人员从巴黎来岛。</p>
+<p>夫人的遗体在奥馆寝室装入豪华棺柩，由六人手抬至泊船处，运尸船已在此等候。</p>
+<p>目送着运尸船向本土远行，女仆奥坦丝泣不成声地呼唤着夫人。夫人走后她无处可去，请求暂时在岛上的厨房打杂，我同意了。</p>
+<p>鼠患仍旧猖獗。</p>
+</blockquote>
+<p>把拉瓦利埃尔夫人的遗体送离圣·汤托万岛后，马勒卡尔典狱长的日子应该回归正常了。</p>
+<p>然而一个月过后，两个月过后，典狱长的日志产生了十分明显的变化——</p>
+<h3 id="1679年3月20日"><a href="#1679年3月20日" class="headerlink" title="1679年3月20日"></a>1679年3月20日</h3><blockquote>
+<p>田鼠数量激增，旁若无人地入侵我的房间。眼下我写日志的时侯，仍能透过火光看到它们的踪影。</p>
+<p>一双双赤红的小眼睛正盯着我。该死的畜生。</p>
+</blockquote>
+<h3 id="1679年4月12日"><a href="#1679年4月12日" class="headerlink" title="1679年4月12日"></a>1679年4月12日</h3><blockquote>
+<p>田鼠又增加了，在我写日志的时候，几只田鼠成伙地爬上桌子，将它们挥散，但没过多久就又来了。赤红的小眼窥伺着我的脸。</p>
+<p>这群可恶的畜生为何总是找我麻烦？</p>
+</blockquote>
+<h3 id="1679年4月25日"><a href="#1679年4月25日" class="headerlink" title="1679年4月25日"></a>1679年4月25日</h3><blockquote>
+<p>听到田鼠在墙中乱窜的声音。</p>
+<p>爬行的嚓嚓声与磨牙的吱吱声不断。侧耳倾听，甚至能听见它们舐唇的啧啧之声。</p>
+<p>叫来看守，命令他探检出声的墙壁周遭。可他回答说并无异状，或许是我的错觉。简直是蒙昧至极，不可救药——</p>
+</blockquote>
+<h3 id="1679年5月12日"><a href="#1679年5月12日" class="headerlink" title="1679年5月12日"></a>1679年5月12日</h3><blockquote>
+<p>我日渐衰弱，夜不能寐。</p>
+<p>忽然听到半夜里有敲门声，打开门却没有人影，门外只有空荡荡的长廊。</p>
+<p>油灯时常冒出黑烟，或许是因为油脂低劣。</p>
+<p>回到床榻，触碰到了一个异常柔软的东西，那究竟是什么呢？</p>
+</blockquote>
+<p>——突然一阵风敲响了档案室的窗户，我一惊，差点没拿稳手中的日志。</p>
+<p>拉瓦利埃尔夫人死后，马勒卡尔典狱长的精神明显不再稳定。不仅墙中老鼠的动静和夜半敲门声是他自己的幻听，房间里出现的鼠群很可能也是他的幻觉。</p>
+<p>或许是马勒卡尔典狱长因为杀害夫人而受到良心上的谴责，才产生了视觉和听觉上的种种幻象吧。</p>
+<p>我整了整思绪，继续读日志。</p>
+<h3 id="1679年5月27日"><a href="#1679年5月27日" class="headerlink" title="1679年5月27日"></a>1679年5月27日</h3><blockquote>
+<p>见到了十几只田鼠，打翻了牛乳瓶，啧啧吸吮着牛奶。</p>
+</blockquote>
+<h3 id="1679年5月30日"><a href="#1679年5月30日" class="headerlink" title="1679年5月30日"></a>1679年5月30日</h3><blockquote>
+<p>一只像猫一样大的田鼠，盘踞在办公室的书架上。那令人作呕的赤红色双眼，紧盯着我的脸。</p>
+<p>我叫喊着，拿起书砸向田鼠，书砸在书架上后落地，再看过去，田鼠却没了踪影。</p>
+<p>我没去办公，返回了房间。日常的工作尽遭它妨碍，必须尽快找到对策。</p>
+</blockquote>
+<h3 id="1679年6月9日"><a href="#1679年6月9日" class="headerlink" title="1679年6月9日"></a>1679年6月9日</h3><blockquote>
+<p>—假面女人再次出现了！</p>
+<p>她为何会出现在我的眼前？拉瓦利埃尔夫人已经死了，亡骸也离岛远去，为何现在仍对我纠缠不休？</p>
+<p>昨夜胸闷，起身舒缓一下。</p>
+<p>夜色未尽，墨色盈窗。目光无意间划过窗外，竟又看到了她。</p>
+<p>人影像是附玻璃上，窥伺着室内。那人戴着令我难以忘怀的假面，穿着薄衣，艳红跳脱夜幕。</p>
+<p>我浑身战栗，内心被恐惧占满。等到我鼓起勇气怒喊窗外是谁时，那人影却飘忽一阵，在窗前消失了。</p>
+<p>我身形狼狈地冲向窗口，旋即开窗向四下望去，那怪影已如烟般消逝无踪。</p>
+<p>最初我以为是留在岛上打杂的女仆奥坦丝在作怪。然而随后就知道是错怪了她。因为我的寝室位于三楼，正常人不可能在窗外窥视内侧。</p>
+<p>所谓的幽灵亡魂我一概不信，然而昨夜的假面人影显然已脱离了人类的范畴，莫非是拉瓦利埃尔夫人临死前的遗恨化为鬼魂留在此地？</p>
+<p>一阵恶寒止不住地向我袭来。若这只是一场噩梦，我希望我能早日醒来。</p>
+</blockquote>
+<p>读着六月九日的记述，我也感到后背一阵发凉。</p>
+<p>田鼠的幻影和深夜敲门的幻听，模糊不清的恐怖，这次终于现出了它的真面目。</p>
+<p>深夜于三楼窗外向内窥视的假面女人——</p>
+<p>那究竟是现实？还是马勒卡尔典狱长的罪意生出的幻觉呢？我用微微颤抖的指尖翻开日志新的一页。</p>
+<h3 id="1679年6月14日"><a href="#1679年6月14日" class="headerlink" title="1679年6月14日"></a>1679年6月14日</h3><blockquote>
+<p>—她昼夜不分地，终日徘徊在我身侧。无论到什么地方，我都能看见她。</p>
+<p>本日，我打算去办公室取笔，打开抽屉后竟涌出了十几只田鼠，在办公室的地面上流窜。我心中慌乱，差点摔倒。勉强稳住心神后喊来看守将它们驱散。</p>
+<p>我的抽屉平时都锁上挂锁，应该不是有人故意搞的恶作剧，这是她在向我昭示她的存在。</p>
+<p>恶寒不祛，头痛不止</p>
+</blockquote>
+<h3 id="1679年6月19日"><a href="#1679年6月19日" class="headerlink" title="1679年6月19日"></a>1679年6月19日</h3><blockquote>
+<p>昨夜她又出现了。</p>
+<p>我把手枪放在枕边，彻夜紧盯着窗户。</p>
+<p>临近拂晓，阵阵倦意来袭，就在这时，身穿红衣的假面女人突然在窗外现身！</p>
+<p>我立即拿起手枪，对着窗户射击。轰然的枪声在深夜的宿舍中响起，玻璃被射得粉碎，数名被惊醒得看守赶到了我的寝室中。</p>
+<p>在手枪停火后，众人立刻上前排查周遭，却并未发见哪怕一点异状。她又消失如烟了。</p>
+<p>虽然当时有了困意，但我并未睡着，我可以断言，那穿红衣的假面女人绝非幻觉！</p>
+<p>——太可怕了。如果我至今所见都是真实的，那么我距离彻底疯狂应该不远了吧；如果我至今所见都是虚假的，那么我的精神应该已经彻底错乱不堪了。</p>
+<p>上帝啊，请救救我吧——</p>
+</blockquote>
+<h3 id="1679年6月25日"><a href="#1679年6月25日" class="headerlink" title="1679年6月25日"></a>1679年6月25日</h3><blockquote>
+<p>我绝非胆小如鼠的人。在她出现时临阵脱逃？我作为一名军人绝不允许。这里就是我的战场，我绝不会效仿懦弱之人。</p>
+</blockquote>
+<h3 id="1679年7月2日"><a href="#1679年7月2日" class="headerlink" title="1679年7月2日"></a>1679年7月2日</h3><blockquote>
+<p>——她又出现了。</p>
+<p>为什么假面女人总是在我身边出现？看守之中已传出风声，怀疑我能否保持正常。狱医也建议我要稳住心神，关于假面女人的种种异常现象都只是幻觉。但我坚信自己亲眼所见的事！</p>
+</blockquote>
+<h3 id="1679年7月9日（？）"><a href="#1679年7月9日（？）" class="headerlink" title="1679年7月9日（？）"></a>1679年7月9日（？）</h3><blockquote>
+<p>——渐渐的，我对时间的概念也模糊了，今天应该是九号吧。她不分昼夜地监视着我，终日虎视眈眈等待机会，我稍有松懈便趁机向我袭来。</p>
+<p>手枪对她起不了作用，那该用什么才能和她抗衡呢？</p>
+<p>田鼠数量狂增，旁若无人地在我身上攀爬，我一刻不得安眠。</p>
+</blockquote>
+<h3 id="1679年7月10日（？）"><a href="#1679年7月10日（？）" class="headerlink" title="1679年7月10日（？）"></a>1679年7月10日（？）</h3><blockquote>
+<p>办公室内，田鼠满溢。</p>
+</blockquote>
+<h3 id="1679年7月11日（？）"><a href="#1679年7月11日（？）" class="headerlink" title="1679年7月11日（？）"></a>1679年7月11日（？）</h3><blockquote>
+<p>田鼠、田鼠、田鼠、田鼠、田鼠、田鼠、田鼠、田鼠、田鼠、田鼠、田鼠、田鼠、田鼠、田鼠、田鼠、田鼠、田鼠、田鼠、田鼠——</p>
+</blockquote>
+<p>（可能是）七月十一号的记述读完，我浑身起了鸡皮疙瘩。</p>
+<p>不是对日志的内容，而是对马勒卡尔典狱长的精神状态。</p>
+<p>马勒卡尔典狱长的精神已经完全崩溃了！他看见满屋老鼠的幻象时，大概已经疯了。</p>
+<p>日志还剩一点，到底这个分不清现实还是幻想的故事该如何收场呢？</p>
+<p>我的手愈发颤抖，翻开后面的书页。</p>
+<h3 id="1679年7月13日（？）"><a href="#1679年7月13日（？）" class="headerlink" title="1679年7月13日（？）"></a>1679年7月13日（？）</h3><blockquote>
+<p>——我的上帝啊，您到底身在何处？请现身救救我吧！能否向您那处在苦痛中的忠实信徒伸出援手？</p>
+<p>为了驱除田鼠，我终日焚香点蜡。今晚在批阅看守报告时，床底突然探出一只如牛犊般大的田鼠，睨视着我。</p>
+<p>那田鼠肥硕异常，浑身湿濡，它在地板上留下了污黑的水痕，似是从下水道中爬上来的。我不断击打它的脑袋，它张开满是尖齿的血口对我示威。</p>
+<p>我大声怒吼，抽出枕头下的手枪，一枪嘣飞了田鼠的脑袋。屋内顿时血浆四溅，满是恶臭。</p>
+<p>我筋疲力尽，连翻动田鼠尸体的力气都没有了，任凭闻声赶来的看守进行善后。我躺在摇椅上，喝着红酒，茫然若失。</p>
+<p>就在将要入睡的时候，忽然听见窗外传来哭泣声。但这可是三楼，怎么会有人在窗外哭呢。</p>
+<p>这哭声究竟是怎么一回事？到底想对我做些什么？</p>
+<p>——几小时后，我连拿笔写字的力气都没有了。</p>
+<p>我又听见她的声音了，她在我耳边低语着——“典狱长，来这儿和我说说话吧。”</p>
+<p>窗户正向外，缓慢地，缓慢地打开—她从打开的窗外，想要进入室内——</p>
+<p>现在室内——现在——</p>
+</blockquote>
+<p>马勒卡尔典狱长的日志到此就唐突结束了，然后下面缀了一段别人的字迹。</p>
+<p>一六七九年七月十四日拂晓，发现了马勒卡尔典狱长的遗体。</p>
+<p>昨夜疾风骤雨不断，即使典狱长在死前有过呼喊，看守们应该也听不到。</p>
+<p>在被发现时，他的身体冲破了三楼寝室的窗玻璃，坠落在宿舍近旁的石台上。尸检的结果显示，他死于脖颈骨折。</p>
+<p>当初曾一度传出谋杀的传闻，但因寝室从内部上了锁，无人可以侵入，所以这个传闻终究只是无凭无据的谣言。</p>
+<p>只是有一点很特别，典狱长死时神情极度惊恐。所以本人至今仍有疑虑：马勒卡尔典狱长的死因或许并非坠落而亡，而是看见了什么可怕事物而引发了心脏麻痹。</p>
+<p>在他临死之前，寝室中曾传出枪响，他对闻声前来的看守说他击杀了一只巨大田鼠，但据看守反映，别说是死鼠尸体，房间里干净得连一滴血都没有。</p>
+<p>验尸官也着重注意到他怪异的行为，因而判定死因为“精神异常引发的事故死亡”。</p>
+<p>狱医 菲利普·瓦苏尔</p>
 
                 
             </div>
@@ -903,7 +900,7 @@ git log -">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ztgdblog.icu/2024/11/08/07-git/">https://ztgdblog.icu/2024/11/08/07-git/</a>
+                    <a href="https://ztgdblog.icu/2024/11/22/B0001-Jianyudao-Rizhi/">https://ztgdblog.icu/2024/11/22/B0001-Jianyudao-Rizhi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -941,8 +938,8 @@ git log -">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/git/">
-                                    <span class="chip bg-color">git</span>
+                                <a href="/tags/%E8%BD%AC%E8%BD%BD/">
+                                    <span class="chip bg-color">转载</span>
                                 </a>
                             
                         </div>
@@ -1262,16 +1259,17 @@ git log -">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2024/11/12/U-urutoraman/">
+                <a href="/2024/11/22/B0001-Jianyudao-Rizhi/">
                     <div class="card-image">
                         
-                        <img src="https://1999684.github.io/picx-images-hosting/rutoram/image.4jo4hqaqmp.webp" class="responsive-img" alt="奥特名单">
+                        <img src="https://1999684.github.io/picx-images-hosting/book/1.8dwwd3i9y3.webp" class="responsive-img" alt="马勒卡尔典狱长日志">
                         
-                        <span class="card-title">奥特名单</span>
+                        <span class="card-title">马勒卡尔典狱长日志</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1281,26 +1279,27 @@ git log -">
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-11-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-11-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%A5%A5%E7%89%B9%E6%9B%BC/" class="post-category">
-                                    奥特曼
+                            <a href="/categories/%E8%BD%AC%E8%BD%BD/" class="post-category">
+                                    转载
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%A5%A5%E7%89%B9%E6%9B%BC/">
-                        <span class="chip bg-color">奥特曼</span>
+                    <a href="/tags/%E8%BD%AC%E8%BD%BD/">
+                        <span class="chip bg-color">转载</span>
                     </a>
                     
                 </div>
@@ -1314,12 +1313,12 @@ git log -">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/11/06/%E9%98%BF%E5%92%8C%E7%BE%8E%E5%9B%BE2/">
+                <a href="/2024/11/20/SAY000/">
                     <div class="card-image">
                         
-                        <img src="https://1999684.github.io/picx-images-hosting/nagomi2/20240830_142000.2dopmowz0f.webp" class="responsive-img" alt="阿和美图~ 第二期">
+                        <img src="https://1999684.github.io/picx-images-hosting/say/SAY1.8l046zxtew.webp" class="responsive-img" alt="【说说】饭城勇三的那本《名侦探指南》">
                         
-                        <span class="card-title">阿和美图~ 第二期</span>
+                        <span class="card-title">【说说】饭城勇三的那本《名侦探指南》</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1330,14 +1329,14 @@ git log -">
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-11-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-11-20
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E9%98%BF%E5%92%8C/" class="post-category">
-                                    阿和
+                            <a href="/categories/%E8%AF%B4%E8%AF%B4/" class="post-category">
+                                    说说
                                 </a>
                             
                             
@@ -1347,8 +1346,8 @@ git log -">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%98%BF%E5%92%8C/">
-                        <span class="chip bg-color">阿和</span>
+                    <a href="/tags/%E8%AF%B4%E8%AF%B4/">
+                        <span class="chip bg-color">说说</span>
                     </a>
                     
                 </div>
