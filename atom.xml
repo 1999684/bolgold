@@ -6,7 +6,7 @@
   <link href="https://ztgdblog.icu/atom.xml" rel="self"/>
   
   <link href="https://ztgdblog.icu/"/>
-  <updated>2024-11-27T00:20:15.617Z</updated>
+  <updated>2024-11-27T13:51:43.073Z</updated>
   <id>https://ztgdblog.icu/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GitHub项目发现</title>
+    <link href="https://ztgdblog.icu/2024/11/27/Git000/"/>
+    <id>https://ztgdblog.icu/2024/11/27/Git000/</id>
+    <published>2024-11-27T12:38:18.000Z</published>
+    <updated>2024-11-27T13:51:43.073Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>更新于2024.11.27</p></blockquote><h2 id="实用工具"><a href="#实用工具" class="headerlink" title="实用工具"></a>实用工具</h2><table><thead><tr><th>名称</th><th>简述</th><th></th></tr></thead><tbody><tr><td><a href="https://github.com/msgbyte/tailchat">tailchat</a></td><td>多插件的聊天软件</td><td></td></tr><tr><td><a href="https://github.com/digitalocean/nginxconfig.io">nginxconfig.io</a></td><td>NGINX 配置生成器</td><td></td></tr><tr><td><a href="https://github.com/zed-industries/zed">zed</a></td><td>一款高性能多玩家代码编辑器</td><td></td></tr><tr><td><a href="https://github.com/toeverything/AFFiNE">AFFiNE</a></td><td>开源笔记软件</td><td></td></tr><tr><td><a href="https://github.com/GoldenPotato137/PotatoVN">PotatoVN</a></td><td>一款Visual Novel管理软件</td><td></td></tr><tr><td><a href="https://github.com/TriliumNext/Notes">TriliumNext</a></td><td>层次化的笔记应用程序，建立大型个人知识库</td><td></td></tr><tr><td><a href="https://github.com/QL-Win/QuickLook">QuickLook</a></td><td></td><td></td></tr></tbody></table><h2 id="AI"><a href="#AI" class="headerlink" title="AI"></a>AI</h2><table><thead><tr><th>名称</th><th>简述</th><th></th></tr></thead><tbody><tr><td><a href="https://github.com/binary-husky/gpt_academic">gpt_academic</a></td><td>AI支持的学术优化项目</td><td></td></tr><tr><td><a href="https://github.com/showlab/Tune-A-Video">Tune-A-Video</a></td><td>基于文本和基础视频生成视频</td><td></td></tr><tr><td><a href="https://github.com/jianchang512/clone-voice">clone-voice</a></td><td>带web界面的声音克隆工具</td><td></td></tr><tr><td><a href="https://github.com/openai/shap-e">Shap-E</a></td><td>根据文本或图像生成 3D 对象</td><td></td></tr></tbody></table><h2 id="阅读"><a href="#阅读" class="headerlink" title="阅读"></a>阅读</h2><table><thead><tr><th>名称</th><th>简述</th><th></th></tr></thead><tbody><tr><td><a href="https://github.com/RSSNext/Follow">Follow</a></td><td>订阅阅读器。与 RSSHub、RSS3 相结合的生态软件，从而扩展了很多的订阅源以供订阅</td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><table><thead><tr><th>名称</th><th>简述</th><th></th></tr></thead><tbody><tr><td><a href="https://github.com/codecrafters-io/build-your-own-x">build-your-own-x</a></td><td>收集了上百篇技术教程，让你学会创建自己的的各种应用程序，如机器人、区块链、数据库、游戏等</td><td></td></tr><tr><td><a href="https://github.com/kamranahmedse/developer-roadmap">developer-roadmap</a></td><td>交互式路线图，开发人员的学习路线</td><td></td></tr><tr><td><a href="https://github.com/jackfrued/Python-100-Days">Python-100-Days</a></td><td>Python - 100天从新手到大师</td><td></td></tr><tr><td><a href="https://github.com/Snailclimb/JavaGuide">JavaGuide</a></td><td>涵盖大部分 Java 程序员所需要掌握的核心知识</td><td></td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;更新于2024.11.27&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;实用工具&quot;&gt;&lt;a href=&quot;#实用工具&quot; class=&quot;headerlink&quot; title=&quot;实用工具&quot;&gt;&lt;/a&gt;实用工具&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;</summary>
+      
+    
+    
+    
+    <category term="Github" scheme="https://ztgdblog.icu/categories/Github/"/>
+    
+    
+    <category term="Github" scheme="https://ztgdblog.icu/tags/Github/"/>
+    
+  </entry>
   
   <entry>
     <title>永远的一刻馆</title>
