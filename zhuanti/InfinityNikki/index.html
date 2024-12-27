@@ -587,19 +587,10 @@
                 <div class="card-content article-card-content">
                     <div id="articleContent" data-aos="fade-up">
                         <style>
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #f0f0f0;
-        font-family: Arial, sans-serif;
-    }
-    .image-container {
+    .image-container1 {
         text-align: center;
     }
-    #image {
+    #image1 {
         max-width: 100%;
         max-height: 70vh;
         margin-bottom: 20px;
@@ -632,12 +623,12 @@
         margin: 0 10px;
     }
 </style>
-<div class="image-container">
-    <img id="image" src="" alt="Image Viewer">
+<div class="image-container1">
+    <img id="image1" src="" alt="Image Viewer">
     <div class="button-group">
-        <button id="prev">Previous</button>
+        <button id="prev">上一张</button>
         <div class="page-buttons" id="pageButtons"></div>
-        <button id="next">Next</button>
+        <button id="next">下一张</button>
     </div>
 </div>
 <script>
@@ -645,7 +636,7 @@
     const totalImages = 2; // 替换为你的图片总数
     let currentImageIndex = 1;
     const maxVisiblePageButtons = 5; // 每行最多显示的页码按钮数
-    document.getElementById('image').src = `${repoUrl}${currentImageIndex}.webp`;
+    document.getElementById('image1').src = `${repoUrl}${currentImageIndex}.webp`;
     document.getElementById('prev').addEventListener('click', () => {
         if (currentImageIndex > 1) {
             currentImageIndex--;
@@ -659,7 +650,7 @@
         }
     });
     function updateImageAndButtons() {
-        document.getElementById('image').src = `${repoUrl}${currentImageIndex}.webp`;
+        document.getElementById('image1').src = `${repoUrl}${currentImageIndex}.webp`;
         generatePageButtons();
     }
     function generatePageButtons() {
@@ -698,6 +689,7 @@
     // 初始生成页码按钮
     generatePageButtons();
 </script>
+
 
                     </div>
                 </div>
