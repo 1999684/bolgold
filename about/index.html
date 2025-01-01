@@ -159,12 +159,12 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/book" class="waves-effect waves-light">
+    <a href="/zhuanti" class="waves-effect waves-light">
 
       
-      <i class="fas fa-pencil-square" style="zoom: 0.6;"></i>
+      <i class="fas fa-object-ungroup" style="zoom: 0.6;"></i>
       
-      <span>记录</span>
+      <span>专题</span>
       <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
     <ul class="sub-nav menus_item_child ">
@@ -195,22 +195,6 @@
           <span>视频</span>
         </a>
       </li>
-      
-    </ul>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/zhuanti" class="waves-effect waves-light">
-
-      
-      <i class="fas fa-object-ungroup" style="zoom: 0.6;"></i>
-      
-      <span>专题</span>
-      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
-    </a>
-    <ul class="sub-nav menus_item_child ">
       
       <li>
         <a href="/zhuanti/bishe/">
@@ -284,6 +268,17 @@
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
       <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/language" class="waves-effect waves-light">
+      
+      <i class="fa fa-language" style="zoom: 0.6;"></i>
+      
+      <span>Language</span>
     </a>
     
   </li>
@@ -400,9 +395,9 @@
 	  
 		<a href="javascript:;">
 			
-				<i class="fa-fw fas fa-pencil-square"></i>
+				<i class="fa-fw fas fa-object-ungroup"></i>
 			
-			记录
+			专题
 			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
             <ul  style="background:  ;" >
@@ -436,21 +431,6 @@
 		          <span>视频</span>
                   </a>
                 </li>
-              
-            </ul>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="javascript:;">
-			
-				<i class="fa-fw fas fa-object-ungroup"></i>
-			
-			专题
-			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
-		</a>
-            <ul  style="background:  ;" >
               
                 <li>
 
@@ -528,6 +508,17 @@
 			    <i class="fa-fw fas fa-address-book"></i>
 			
 			友情链接
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/language" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fa fa-language"></i>
+			
+			Language
 		</a>
           
         </li>
@@ -648,7 +639,7 @@
 
     <script>
         // 每天切换 banner 图.  Switch banner image every day.
-        $('.bg-cover').css('background-image', 'url(/medias/banner/29.png)');
+        $('.bg-cover').css('background-image', 'url(/medias/banner/1.png)');
     </script>
     
 
@@ -680,21 +671,21 @@
                         <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                             
 <div class="statis">
-    <span class="count"><a href="/">21</a></span>
+    <span class="count"><a href="/">24</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">11</a></span>
+    <span class="count"><a href="/categories">13</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">25</a></span>
+    <span class="count"><a href="/tags">28</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -710,21 +701,21 @@
                                     <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                         
 <div class="statis">
-    <span class="count"><a href="/">21</a></span>
+    <span class="count"><a href="/">24</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">11</a></span>
+    <span class="count"><a href="/categories">13</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">25</a></span>
+    <span class="count"><a href="/tags">28</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -916,7 +907,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12"]
+            data: ["2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01"]
         },
         yAxis: {
             type: 'value',
@@ -926,7 +917,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,3,5,1,0,0,0,10,2],
+                data: [0,0,0,0,3,5,1,0,0,0,10,3,2],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -968,7 +959,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"Markdown","value":2},{"name":"Docker","value":1},{"name":"工具","value":6},{"name":"前端","value":1},{"name":"博客","value":2},{"name":"Github","value":1},{"name":"书评、笔记","value":1},{"name":"转载","value":1},{"name":"说说","value":3},{"name":"动漫","value":1},{"name":"阿和","value":2}],
+                data: [{"name":"Markdown","value":2},{"name":"Docker","value":1},{"name":"博客","value":2},{"name":"前端","value":1},{"name":"工具","value":6},{"name":"书评、笔记","value":1},{"name":"转载","value":1},{"name":"毕设","value":1},{"name":"Github","value":1},{"name":"说说","value":3},{"name":"年末まとめ","value":1},{"name":"动漫","value":1},{"name":"阿和","value":2}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -992,7 +983,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["说说","markdown","阿和","技术","docker","nvm","nrm","前端","http","hexo"]
+                data: ["说说","markdown","阿和","技术","docker","hexo","Matery主题","前端","http","nvm"]
             }
         ],
         yAxis: [
@@ -1086,8 +1077,8 @@
                     <div class="copy-right">
                         Copyright&nbsp;&copy;
                         
-                                <span id="year">2024</span>
-                                
+                            <span id="year">2024-2025</span>
+                            
                                     <a href="/about" target="_blank">ZTGD</a>
                                     |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
                                     |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery"
@@ -1096,7 +1087,7 @@
                                             <br>
                                             
                                                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">
-                                                        32.9k
+                                                        36.7k
                                                     </span>
                                                     
                                                         
