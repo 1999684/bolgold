@@ -604,44 +604,10 @@
     </div>
 </div>
 
-<script>
-    // 使用 EJS 读取环境变量
-    const steamApiKey = '';
-    const steamId = '76561199217075511';
-    console.log('Steam API Key:', '&lt;%= process.env.STEAM_API_KEY %&gt;');
-
-    const apiUrl = `https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=${steamApiKey}&steamid=${steamId}&format=json`;
-
-    fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-            const games = data.response.games;
-            const gamesList = document.getElementById('games-list');
-
-            games.forEach(game => {
-                const listItem = document.createElement('li');
-                listItem.innerHTML = `
-                    <h2>${game.name}</h2>
-                    <p>Playtime (last 2 weeks): ${game.playtime_2weeks} minutes</p>
-                `;
-                gamesList.appendChild(listItem);
-            });
-        })
-        .catch(error => {
-            console.error('Error fetching data:', error);
-            document.getElementById('games-list').innerHTML = '<li>Failed to load game data. Please try again later.</li>';
-        });
-</script>
-
-
 <main class="content">
 
     <div id="zhuanti" class="container about-container">
         <div class="card">
-            <div id="steam-games">
-                <h2>最近游玩</h2>
-                <ul id="games-list"></ul>
-            </div>
             <div class="card-content">
                 <div class="card-content article-card-content">
                     <div id="articleContent" data-aos="fade-up">
