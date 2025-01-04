@@ -607,7 +607,7 @@
 <script>
     // 替换为你的Steam ID
     const steamId = '76561199217075511';
-    const apiKey = '3E0319B9AA6C90A2E1EE66E2C952FAB5'; // 从Hexo配置中读取API Key
+    const apiKey = '&lt;%= process.env.STEAM_API_KEY %&gt;'; // 从Hexo配置中读取API Key
 
     fetch(`https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=${apiKey}&steamid=${steamId}&format=json`)
         .then(response => response.json())
@@ -1076,7 +1076,7 @@
                                             <br>
                                             
                                                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">
-                                                        38.1k
+                                                        39k
                                                     </span>
                                                     
                                                         
