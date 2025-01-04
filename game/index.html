@@ -605,12 +605,14 @@
 </div>
 
 <script>
-    // 替换为你的Steam ID
+    // 使用 EJS 读取环境变量
+    const steamApiKey = '';
     const steamId = '76561199217075511';
-    const apiKey = ''; // 从Hexo配置中读取API Key
-    console.log('Steam API Key:', '');
+    console.log('Steam API Key:', '&lt;%= process.env.STEAM_API_KEY %&gt;');
 
-    fetch(`https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=${apiKey}&steamid=${steamId}&format=json`)
+    const apiUrl = `https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=${steamApiKey}&steamid=${steamId}&format=json`;
+
+    fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
             const games = data.response.games;
@@ -619,7 +621,7 @@
             games.forEach(game => {
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `
-                    <h3>${game.name}</h3>
+                    <h2>${game.name}</h2>
                     <p>Playtime (last 2 weeks): ${game.playtime_2weeks} minutes</p>
                 `;
                 gamesList.appendChild(listItem);
@@ -1078,7 +1080,7 @@
                                             <br>
                                             
                                                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">
-                                                        38.1k
+                                                        39k
                                                     </span>
                                                     
                                                         
