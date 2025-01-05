@@ -231,6 +231,13 @@
         </a>
       </li>
       
+      <li>
+        <a href="/zhuanti">
+          
+          <span>其他可见专题内</span>
+        </a>
+      </li>
+      
     </ul>
     
   </li>
@@ -478,6 +485,14 @@
                   </a>
                 </li>
               
+                <li>
+
+                  <a href="/zhuanti " style="margin-left:75px">
+				  
+		          <span>其他可见专题内</span>
+                  </a>
+                </li>
+              
             </ul>
           
         </li>
@@ -616,7 +631,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2025-01-02
+                    2025-01-05
                 </div>
                 
 
@@ -702,7 +717,7 @@
 <h3 id="2-5模型架构"><a href="#2-5模型架构" class="headerlink" title="2.5模型架构"></a>2.5模型架构</h3><p>此模型的整体架构由后验编码器、先验编码器、解码器、鉴别器和随机时长预测器组成。后验编码器和鉴别器仅用于训练，不用于推理。架构细节见附录B。</p>
 <h4 id="2-5-1-后验编码器"><a href="#2-5-1-后验编码器" class="headerlink" title="2.5.1 后验编码器"></a>2.5.1 后验编码器</h4><p>对于后验编码器，我们使用在 WaveGlow (Prenger et al., 2019) 和 Glow-TTS (Kim et al., 2020) 中使用的非因果 WaveNet 残差块。WaveNet 残差块由带有门控激活单元和跳跃连接的扩张卷积层组成。块上方的线性投影层产生正态后验分布的均值和方差。对于多个说话人的情况，我们在残差块中使用全局条件(Oord et al., 2016) 来添加说话人嵌入（speaker embedding）。</p>
 <h4 id="2-5-2先验编码器"><a href="#2-5-2先验编码器" class="headerlink" title="2.5.2先验编码器"></a>2.5.2先验编码器</h4><p>先验编码器由一个处理输入音素上下文 <em>c<sub>text</sub></em> 文本编码器和一个提高先验分布灵活性的归一化流 <em>f<sub>θ</sub></em> 组成。文本编码器是一个转换编码器（Vaswani et al.，2017），它使用相对位置表示（Shaw et al.，2018）而不是绝对位置编码。我们可以通过文本编码器和文本编码器上面的线性投影层，从文本 <em>c<sub>text</sub></em> 中获得隐藏表示 <em>h<sub>text</sub></em> ，该线性投影层产生用于构造先验分布的均值和方差。归一化流是一堆仿射耦合层（Dinh et al., 2017），由一堆WaveNet残差块组成。为简单起见，我们将归一化流程设计为雅可比行列式为1的体积保持变换。对于多个说话人的情况，我们通过全局调节将说话人嵌入到归一化流中的残差块中。</p>
-<h4 id="2-5-3解码器"><a href="#2-5-3解码器" class="headerlink" title="2.5.3解码器"></a>2.5.3解码器</h4><p>本质上来讲，解码器是 HiFi-GAN V1 生成器(Kong et al., 2020)。</p>
+<h4 id="2-5-3解码器"><a href="#2-5-3解码器" class="headerlink" title="2.5.3解码器"></a>2.5.3解码器</h4><p>本质上来讲，解码器是 HiFi-GAN V1 生成器(Kong et al., 2020)。它由一个转置卷积堆组成，</p>
 <h2 id="翻译参考"><a href="#翻译参考" class="headerlink" title="翻译参考"></a>翻译参考</h2><ol>
 <li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/678864844">变分下界ELBO,变分自编码器（Variational Autoencoder, VAE）的核心数学公式（两个公式）最详细讲解（小白） - 知乎</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43876801/article/details/103654186">变分自编码器（Variational auto-encoder, VAE）理解及教程-CSDN博客</a></li>
@@ -1397,7 +1412,7 @@
                                             <br>
                                             
                                                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">
-                                                        38.1k
+                                                        81.9k
                                                     </span>
                                                     
                                                         
