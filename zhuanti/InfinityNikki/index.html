@@ -614,7 +614,7 @@
 
     <script>
         // 每天切换 banner 图.  Switch banner image every day.
-        $('.bg-cover').css('background-image', 'url(/medias/banner/12.png)');
+        $('.bg-cover').css('background-image', 'url(/medias/banner/14.png)');
     </script>
     
 
@@ -677,36 +677,44 @@
 </div>
 <script>
     const repoUrl = 'https://1999684.github.io/picx-images-hosting/zhuanti/InfinityNikki/';
-    const totalImages = 8; // 替换为你的图片总数
-    let currentImageIndex = 1;
+    const totalImages = 14; // 图片总数
+    let currentImageIndex = totalImages; // 初始显示编号最大的图片（14）
     const maxVisiblePageButtons = 5; // 每行最多显示的页码按钮数
+    // 初始化显示第一张图片（编号最大的图片）
     document.getElementById('image1').src = `${repoUrl}${currentImageIndex}.webp`;
+    // 上一张按钮点击事件
     document.getElementById('prev').addEventListener('click', () => {
         if (currentImageIndex > 1) {
             currentImageIndex--;
             updateImageAndButtons();
         }
     });
+    // 下一张按钮点击事件
     document.getElementById('next').addEventListener('click', () => {
         if (currentImageIndex < totalImages) {
             currentImageIndex++;
             updateImageAndButtons();
         }
     });
+    // 更新图片和页码按钮
     function updateImageAndButtons() {
+        // 显示当前图片（编号从大到小）
         document.getElementById('image1').src = `${repoUrl}${currentImageIndex}.webp`;
         generatePageButtons();
     }
+    // 生成页码按钮
     function generatePageButtons() {
         const pageButtonsContainer = document.getElementById('pageButtons');
         pageButtonsContainer.innerHTML = ''; // 清空之前的页码按钮
+        // 计算起始和结束页码
         const startPage = Math.max(1, currentImageIndex - Math.floor(maxVisiblePageButtons / 2));
         const endPage = Math.min(totalImages, startPage + maxVisiblePageButtons - 1);
+        // 生成页码按钮
         for (let i = startPage; i <= endPage; i++) {
             const button = document.createElement('button');
-            button.textContent = i;
+            button.textContent = totalImages - i + 1; // 显示倒序编号
             button.addEventListener('click', () => {
-                currentImageIndex = i;
+                currentImageIndex = totalImages - i + 1; // 更新当前图片索引
                 updateImageAndButtons();
             });
             if (i === currentImageIndex) {
@@ -1082,7 +1090,7 @@
                                             <br>
                                             
                                                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">
-                                                        285.7k
+                                                        286k
                                                     </span>
                                                     
                                                         
