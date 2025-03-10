@@ -570,6 +570,72 @@
     .about-cover {
         height: 75vh;
     }
+    /* 修改时间线和文章显示的样式 */
+    .simple-article-title {
+        padding: 12px 15px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        display: block;
+        color: #42b983;
+        transition: all 0.3s ease;
+        width: 100%;
+        box-sizing: border-box;
+        border-bottom: 1px dashed #eee;
+    }
+    .simple-article-title:hover {
+        background-color: rgba(0,0,0,0.05);
+        transform: translateX(5px);
+    }
+    .cd-timeline-content {
+        margin-left: 60px;
+        margin-bottom: 10px;
+        width: calc(100% - 60px);
+    }
+    #cd-timeline {
+        position: relative;
+        padding: 2em 0;
+    }
+    /* 移除时间线的垂直线 */
+    #cd-timeline::before {
+        display: none;
+    }
+    .cd-timeline-block {
+        position: relative;
+        margin: 1em 0;
+    }
+    .cd-timeline-img {
+        position: absolute;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+        background-color: #42b983;
+    }
+    .cd-timeline-img.year {
+        background-color: #3f51b5;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin-left: -5px;
+    }
+    .cd-timeline-img.month {
+        background-color: #ff9800;
+    }
+    .cd-timeline-img.day {
+        background-color: #00bcd4;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 5px;
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+    .cd-timeline-img a {
+        color: #fff;
+    }
 </style>
 
 <div class="bg-cover pd-header about-cover">
@@ -614,7 +680,7 @@
 
     <script>
         // 每天切换 banner 图.  Switch banner image every day.
-        $('.bg-cover').css('background-image', 'url(/medias/banner/6.png)');
+        $('.bg-cover').css('background-image', 'url(/medias/banner/11.png)');
     </script>
     
 
@@ -652,52 +718,9 @@
                 <span>20</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2024/06/20/02-markdown2/">
-                            <div class="card-image">
-                                
-                                <img src="https://markdown.com.cn/hero.png" class="responsive-img" alt="markdown实用技巧">
-                                
-                                <span class="card-title">markdown实用技巧</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    前言
-今天随机刷博客的时候看到一篇博文，讲的采用 html 语法扩展代码折叠功能折叠代码块，感觉很好用
-
-博文链接：【随笔】Markdown 代码块折叠与收起 | 框架師
-代码块折叠123456789101112131415&lt;deta
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2024-06-20
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/Markdown/" class="post-category">
-                                    Markdown
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/markdown/"><span class="chip bg-color">markdown</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
+                <a href="/2024/06/20/02-markdown2/" class="simple-article-title">
+                    markdown实用技巧
+                </a>
             </article>
         </div>
         
@@ -714,52 +737,9 @@
                 <span>18</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2024/06/18/01-docker(1)/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="docker常用命令整理">
-                                
-                                <span class="card-title">docker常用命令整理</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    Docker：查看Docker版本信息了解当前安装的Docker版本，可以使用以下命令：
-1docker version
-该命令会显示Docker的客户端版本和服务器版本等详细信息。
-拉取镜像使用Docker之前，首先需要从Docker H
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2024-06-18
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/Docker/" class="post-category">
-                                    Docker
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/docker/"><span class="chip bg-color">docker</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
+                <a href="/2024/06/18/01-docker(1)/" class="simple-article-title">
+                    docker常用命令整理
+                </a>
             </article>
         </div>
         
@@ -776,54 +756,9 @@
                 <span>18</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2024/06/18/%E5%B7%A5%E5%85%B7-03-PotatoVN/">
-                            <div class="card-image">
-                                
-                                <img src="https://1999684.github.io/picx-images-hosting/artical/1718718824262.jpg" class="responsive-img" alt="工具推荐-03 PotatoVN：Visual Novel管理软件">
-                                
-                                <span class="card-title">工具推荐-03 PotatoVN：Visual Novel管理软件</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    
-简短介绍大多数gal玩家都有整理gal的烦恼，毕竟一一用文件夹存放，再使用快捷方式来启动不是不行，但是并不够美观。
-话不多说，先看效果
-
-考虑到steam也可以达到这样的效果，其实就是第三方加入，设置海报。但是这个可以自己扫描库，多省事啊
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2024-06-18
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
-                                    工具
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/%E6%B8%B8%E6%88%8F/"><span class="chip bg-color">游戏</span></a>
-                            
-                            <a href="/tags/%E8%B5%84%E6%BA%90%E6%95%B4%E7%90%86/"><span class="chip bg-color">资源整理</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
+                <a href="/2024/06/18/%E5%B7%A5%E5%85%B7-03-PotatoVN/" class="simple-article-title">
+                    工具推荐-03 PotatoVN：Visual Novel管理软件
+                </a>
             </article>
         </div>
         
@@ -845,51 +780,9 @@
                 <span>10</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2024/05/10/%E5%B7%A5%E5%85%B7-02-QuickLook/">
-                            <div class="card-image">
-                                
-                                <img src="https://1999684.github.io/picx-images-hosting/ownpOrc81LDhNf3.45jaehtxs.webp" class="responsive-img" alt="工具推荐-02 QuickLook：一款免费的轻量级快速预览工具">
-                                
-                                <span class="card-title">工具推荐-02 QuickLook：一款免费的轻量级快速预览工具</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    
-简介（本文图片所用图床已经失效了）
-眼馋Mac 系统上空格预览的功能很久了？这不就有了
-QuickLook就是一款让用户在 Windows 系统下单机空格键就能实现文件预览的功能，与 Mac 系统使用体验几乎一致。虽然已经上架微软应用商店
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2024-05-10
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
-                                    工具
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/%E5%BF%AB%E9%80%9F%E6%B5%8F%E8%A7%88/"><span class="chip bg-color">快速浏览</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
+                <a href="/2024/05/10/%E5%B7%A5%E5%85%B7-02-QuickLook/" class="simple-article-title">
+                    工具推荐-02 QuickLook：一款免费的轻量级快速预览工具
+                </a>
             </article>
         </div>
         
@@ -906,49 +799,9 @@ QuickLook就是一款让用户在 Windows 系统下单机空格键就能实现�
                 <span>08</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2024/05/08/%E5%B7%A5%E5%85%B7-01-trilium/">
-                            <div class="card-image">
-                                
-                                <img src="https://1999684.github.io/picx-images-hosting/N21FzxZuHBDYGK7.6ik53wbnce.webp" class="responsive-img" alt="工具推荐-01 Trilium:个人知识库的超高自由度编辑">
-                                
-                                <span class="card-title">工具推荐-01 Trilium:个人知识库的超高自由度编辑</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    简介(部分图片失效)
-去年本来是突发奇想，想要找一个好用的笔记软件而已。于是开始了多个软件的尝试，最后在Github上偶然发现了这个 Trilium &#x2F; Trilium(汉化) 。本着看到就要试试的Github用户心态，不玩玩看不
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2024-05-08
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
-                                    工具
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93/"><span class="chip bg-color">个人知识库</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
+                <a href="/2024/05/08/%E5%B7%A5%E5%85%B7-01-trilium/" class="simple-article-title">
+                    工具推荐-01 Trilium:个人知识库的超高自由度编辑
+                </a>
             </article>
         </div>
         
@@ -965,51 +818,9 @@ QuickLook就是一款让用户在 Windows 系统下单机空格键就能实现�
                 <span>08</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2024/05/08/00-markdown/">
-                            <div class="card-image">
-                                
-                                <img src="https://markdown.com.cn/hero.png" class="responsive-img" alt="markdown常用">
-                                
-                                <span class="card-title">markdown常用</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，Markdown文件的后缀名便是“.md”。
-Markdown 标题语法要创建标题，请在单词或短语前面添加井号 (#) 。# 的数量代表了标题的级别。例如，
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2024-05-08
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/Markdown/" class="post-category">
-                                    Markdown
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/markdown/"><span class="chip bg-color">markdown</span></a>
-                            
-                            <a href="/tags/%E6%8A%80%E6%9C%AF/"><span class="chip bg-color">技术</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
+                <a href="/2024/05/08/00-markdown/" class="simple-article-title">
+                    markdown常用
+                </a>
             </article>
         </div>
         

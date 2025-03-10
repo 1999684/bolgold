@@ -570,6 +570,72 @@
     .about-cover {
         height: 75vh;
     }
+    /* 修改时间线和文章显示的样式 */
+    .simple-article-title {
+        padding: 12px 15px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        display: block;
+        color: #42b983;
+        transition: all 0.3s ease;
+        width: 100%;
+        box-sizing: border-box;
+        border-bottom: 1px dashed #eee;
+    }
+    .simple-article-title:hover {
+        background-color: rgba(0,0,0,0.05);
+        transform: translateX(5px);
+    }
+    .cd-timeline-content {
+        margin-left: 60px;
+        margin-bottom: 10px;
+        width: calc(100% - 60px);
+    }
+    #cd-timeline {
+        position: relative;
+        padding: 2em 0;
+    }
+    /* 移除时间线的垂直线 */
+    #cd-timeline::before {
+        display: none;
+    }
+    .cd-timeline-block {
+        position: relative;
+        margin: 1em 0;
+    }
+    .cd-timeline-img {
+        position: absolute;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+        background-color: #42b983;
+    }
+    .cd-timeline-img.year {
+        background-color: #3f51b5;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin-left: -5px;
+    }
+    .cd-timeline-img.month {
+        background-color: #ff9800;
+    }
+    .cd-timeline-img.day {
+        background-color: #00bcd4;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 5px;
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+    .cd-timeline-img a {
+        color: #fff;
+    }
 </style>
 
 <div class="bg-cover pd-header about-cover">
@@ -614,7 +680,7 @@
 
     <script>
         // 每天切换 banner 图.  Switch banner image every day.
-        $('.bg-cover').css('background-image', 'url(/medias/banner/6.png)');
+        $('.bg-cover').css('background-image', 'url(/medias/banner/11.png)');
     </script>
     
 
@@ -652,50 +718,9 @@
                 <span>01</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2025/03/01/SAY004/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="【说说】关于windows上pynini和WeTextProcessing的安装">
-                                
-                                <span class="card-title">【说说】关于windows上pynini和WeTextProcessing的安装</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    最近尝试vits-chinese的时候，遇到安装pynini和WeTextProcessing依赖报错的问题，报错信息如下：
-123456789101112131415161718Building wheels for collected 
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2025-03-01
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/%E8%AF%B4%E8%AF%B4/" class="post-category">
-                                    说说
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/%E8%AF%B4%E8%AF%B4/"><span class="chip bg-color">说说</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
+                <a href="/2025/03/01/SAY004/" class="simple-article-title">
+                    【说说】关于windows上pynini和WeTextProcessing的安装
+                </a>
             </article>
         </div>
         
