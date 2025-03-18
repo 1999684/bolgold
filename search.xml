@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>momes来做记录</title>
-      <link href="/2025/03/18/SAY0005/"/>
-      <url>/2025/03/18/SAY0005/</url>
-      
-        <content type="html"><![CDATA[<p>搞个memos当朋友圈发，没事写写也挺好</p><p><a href="http://memos.ztgdblog.icu/">Memos</a></p><p>安装部署上，直接宝塔+docker一键部署，轻轻松松，没啥好说的，挺好的，也还算美观</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 说说 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 说说 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>TypeScript使用笔记</title>
       <link href="/2025/03/18/08-typescript/"/>
       <url>/2025/03/18/08-typescript/</url>
